@@ -1,0 +1,71 @@
+.placeAtMiddle{
+	width: 100vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #252319;
+	border-top: 0.5rem solid #ffd200;
+	box-sizing: border-box;
+	padding-left: 9rem;
+	padding-right: 10rem;
+}
+.topImg{
+	width: 36rem;
+	height: 26rem;
+	filter: opacity(0.53);
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+/* 左上角logo 开始 */
+.logoName{
+	width: fit-content;
+	height: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.leftPara{
+	width: 1rem;
+	height: 3rem;
+	font-size: 3rem;
+	text-align: left;
+	color: #504c41;
+}
+.rightPara{
+	width: 1rem;
+	height: 3rem;
+	font-size: 3rem;
+	text-align: right;
+	color: #ffd200;
+}
+.logoName_mid{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 3rem;
+	width: fit-content;
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+}
+.logoName_mid_top{
+	color: #ffffff;
+	font-size: 1.5rem;
+	font-style: italic;
+	/* line-height: 1rem; */
+}
+.logoName_mid_btm{
+	font-size: 1rem;
+	color: #787465;
+	line-height: 1rem;
+}
+/* 左上角logo 结束 */
+
+/* 右上角菜单栏 开始 */
+
+/* 右上角菜单栏 结束 */
