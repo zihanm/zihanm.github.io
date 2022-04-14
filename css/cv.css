@@ -137,6 +137,20 @@
 	margin-right: 0.5rem;
 	margin-top: 0.5rem;
 }
+.main_year_course:hover{
+	animation: main_year_course_animation 2s;
+}
+@keyframes main_year_course_animation{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
 .main_subsection_title{
 	width: fit-content;
 	padding-left:  0.5rem;
