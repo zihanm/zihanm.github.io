@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: flex-start;
+	align-items: center;
 	background-color: #252319;
 	border-top: 0.5rem solid #ffd200;
 	box-sizing: border-box;
@@ -20,6 +20,21 @@
 	left: 0;
 	margin-left: 2rem;
 	margin-top: 1rem;
+	z-index: -1;
+}
+.body_container{
+	width: calc(100vw - 9rem - 10rem);
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flexs;
+}
+.topLine{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start
 }
 /* 左上角logo 开始 */
 .logoName{
@@ -56,16 +71,56 @@
 .logoName_mid_top{
 	color: #ffffff;
 	font-size: 1.5rem;
-	font-style: italic;
-	/* line-height: 1rem; */
+	font-weight: bold;
 }
+
 .logoName_mid_btm{
 	font-size: 1rem;
 	color: #787465;
 	line-height: 1rem;
 }
+
 /* 左上角logo 结束 */
 
 /* 右上角菜单栏 开始 */
-
+.menu_container{
+	width: fit-content;
+	height: 1.8rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.menu{
+	width: 7.4rem;
+	height: 1.8rem;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding-right: 0.4rem;
+	padding-bottom: 0.4rem;
+	font-size: 0.8rem;
+	margin-left: 0.4rem;
+	box-sizing: border-box;
+}
+.menu_selected{
+	background-color: #ffd200;
+	color: #504c41;
+	font-weight: bolder;
+}
+.menu_not_selected{
+	background-color: #504c41;
+	color: #ffd200;
+}
 /* 右上角菜单栏 结束 */
+.topLine_btm_padding{
+	height: calc(6.6rem - 2rem);
+	width: 100%;
+}
+
+.contact_me{
+	align-self: center;
+	color: #FFFFFF;
+	margin-bottom: 1rem;
+	font-size: 0.7rem;
+}

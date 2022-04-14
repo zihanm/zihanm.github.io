@@ -5,18 +5,190 @@
 		<title>Well, this is my personal blog</title>
 		<style type="text/css">
 			@import url("./css/index.css");
+			@import url("css/public_style.css");
+			@import url("css/cv.css");
 		</style>
 	</head>
 	<body>
-		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/index.js"  charset="utf-8"></script>
+		<script src="js/root_font_adj.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 页面滚动时，右侧导航一起改变
+			const windowHeight =  window.screen.availHeight
+			window.onscroll = function() {
+				// 倒着来
+				if(document.getElementById('ctt5').getBoundingClientRect().top <= windowHeight /2){
+					document.getElementById('list1').className = 'list_item list_item_other'
+					document.getElementById('list2').className = 'list_item list_item_other'
+					document.getElementById('list3').className = 'list_item list_item_other'
+					document.getElementById('list4').className = 'list_item list_item_other'
+					document.getElementById('list5').className = 'list_item list_item_current'
+				}
+				else if(document.getElementById('ctt4').getBoundingClientRect().top <= windowHeight /2){
+					document.getElementById('list1').className = 'list_item list_item_other'
+					document.getElementById('list2').className = 'list_item list_item_other'
+					document.getElementById('list3').className = 'list_item list_item_other'
+					document.getElementById('list4').className = 'list_item list_item_current'
+					document.getElementById('list5').className = 'list_item list_item_other'
+				}
+				else if(document.getElementById('ctt3').getBoundingClientRect().top <= windowHeight /2){
+					document.getElementById('list1').className = 'list_item list_item_other'
+					document.getElementById('list2').className = 'list_item list_item_other'
+					document.getElementById('list3').className = 'list_item list_item_current'
+					document.getElementById('list4').className = 'list_item list_item_other'
+					document.getElementById('list5').className = 'list_item list_item_other'
+				}
+				else if(document.getElementById('ctt2').getBoundingClientRect().top <= windowHeight /2){
+					document.getElementById('list1').className = 'list_item list_item_other'
+					document.getElementById('list2').className = 'list_item list_item_current'
+					document.getElementById('list3').className = 'list_item list_item_other'
+					document.getElementById('list4').className = 'list_item list_item_other'
+					document.getElementById('list5').className = 'list_item list_item_other'
+				}
+				else{
+					document.getElementById('list1').className = 'list_item list_item_current'
+					document.getElementById('list2').className = 'list_item list_item_other'
+					document.getElementById('list3').className = 'list_item list_item_other'
+					document.getElementById('list4').className = 'list_item list_item_other'
+					document.getElementById('list5').className = 'list_item list_item_other'
+				}
+			}
+			
+			// 点击右侧导航滚动到对应到地方
+			function scrollPageTo(id_name){
+				var el = document.getElementById(id_name)
+				var delta = el.getBoundingClientRect().y + window.pageYOffset - 20
+				window.scrollTo({
+				  top: delta,
+				  behavior: 'smooth' 
+				})
+			}
+			
+			window.onload = function(){
+				show_education()
+				show_career()
+				show_skills()
+				show_freelancing()
+				show_intern()
+			}
+			
+		</script>
 		<img src="img/topimg.png" class="topImg">
-		<div class="logoName">
-			<div class="leftPara">{</div>
-			<div class="logoName_mid">
-				<div class="logoName_mid_top">那就叫阿梅咯...</div>
-				<div class="logoName_mid_btm">personal blog</div>
+		<div class="body_container">
+			<div class="topLine">
+				<div class="logoName">
+					<div class="leftPara">{</div>
+					<div class="logoName_mid">
+						<div class="logoName_mid_top">那就叫阿梅咯...</div>
+						<div class="logoName_mid_btm">personal blog</div>
+					</div>
+					<div class="rightPara">}</div>
+				</div>
+				<div class="menu_container">
+					<a href="index.html" class="menu menu_selected">CV</a>
+					<!-- <a href="book_notes.html" class="menu menu_not_selected">读书笔记</a>
+					<a href="industry.html" class="menu menu_not_selected">行业随想</a>
+					<a href="study.html" class="menu menu_not_selected">各种学习</a> -->
+				</div>
 			</div>
-			<div class="rightPara">}</div>
+			<div class="topLine_btm_padding">
+				
+			</div>
+			
+			<!-- 工作经历 开始 -->
+			<div class="section_title" id='ctt1'>
+				<div class="section_title_top">
+					工作经历
+				</div>
+				<div class="section_title_btm">
+					EDUCATION
+				</div>
+			</div>
+			<div id="career_js_anchor"></div>
+			<!-- 工作经历 结束 -->
+			
+			<!-- 教育经历 开始 -->
+			<div class="section_title" id='ctt2'>
+				<div class="section_title_top">
+					教育经历
+				</div>
+				<div class="section_title_btm">
+					EDUCATION
+				</div>
+			</div>
+			<div id="edu_js_anchor"></div>
+			<!-- 教育经历 结束 -->
+			
+			<!-- 个人项目 开始 -->
+			<div class="section_title" id='ctt3'>
+				<div class="section_title_top">
+					个人项目
+				</div>
+				<div class="section_title_btm">
+					FREELANCING
+				</div>
+			</div>
+			<div id="freelancing_js_anchor"></div>
+			<!-- 个人项目 结束 -->
+			
+			<!-- 实习和兼职 开始 -->
+			<div class="section_title" id='ctt4'>
+				<div class="section_title_top">
+					实习和兼职
+				</div>
+				<div class="section_title_btm">
+					INTERNS & PART TIMES
+				</div>
+			</div>
+			<div id="intern_js_anchor"></div>
+			<!-- 实习和兼职 结束 -->
+			
+			<!-- 技能 开始 -->
+			<div class="section_title" id='ctt5'>
+				<div class="section_title_top">
+					技能
+				</div>
+				<div class="section_title_btm">
+					SKILLS
+				</div>
+			</div>
+			<div id="skill_js_anchor"></div>
+			<!-- 技能 结束 -->
+			
+			<!-- 右侧导航目录 -->
+			<div class="breif_section_list">
+				<div class="list_sep_line"></div>
+				
+				<div class="list_item list_item_current" id='list1' onclick="scrollPageTo('ctt1')">
+					工作经历
+				</div>
+				<div class="list_sep_line"></div>
+				
+				<div class="list_item list_item_other" id='list2' onclick="scrollPageTo('ctt2')">
+					教育经历
+				</div>
+				<div class="list_sep_line"></div>
+				
+				<div class="list_item list_item_other" id='list3' onclick="scrollPageTo('ctt3')">
+					个人项目
+				</div>
+				<div class="list_sep_line"></div>
+				
+				<div class="list_item list_item_other" id='list4' onclick="scrollPageTo('ctt4')">
+					实习和兼职
+				</div>
+				<div class="list_sep_line"></div>
+				
+				<div class="list_item list_item_other" id='list5' onclick="scrollPageTo('ctt5')">
+					技能
+				</div>
+				<div class="list_sep_line"></div>
+			</div>
+			
+			<div class="contact_me">
+				EMAIL:&nbsp; zihanmcn@126.com
+			</div>
+			
 		</div>
 	</body>
 </html>
