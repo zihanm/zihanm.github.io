@@ -236,9 +236,18 @@
 	padding-right: 3.2rem;
 	color: #ffd200;
 	font-weight: bolder;
+	animation: list_item_current_animation 1s;
 }
 .list_item_current::before{
 	content: '<<';
+}
+@keyframes list_item_current_animation{
+	from{
+		padding-right: 0.6rem;
+	}
+	to{
+		padding-right: 3.2rem;
+	}
 }
 .list_item_other{
 	color: #ffffff;

@@ -11,16 +11,19 @@ function show_education(){
 				{
 					project_name:'一个用于研究胆固醇在神经退行性疾病中的作用的系统生物学方法',
 					project_discription:[
+						'论文题目:&nbsp;Metal-Organic Frameworks: Optimization of Cell Staining Technique for Cellular Uptake and Computational Characterization of Mesoporosity',
 						'从事一个系统生物学的课题来研究和模拟胆固醇在神经退行性疾病中的作用',
 						'专攻阿尔兹海默症的病理，并和计算机团队紧密沟通与合作，将代谢网络转化成petri网，搜集相关酶促反应的米氏方程参数和其它动力学参数，整合到神经元模型中',
-						'制作一个<a href="https://c3yrhckwpm.wixsite.com/neurodegenerative">网站(需要翻墙)</a>来提升青少年对于神经退行性疾病的意识'
+						'制作一个<a href="https://c3yrhckwpm.wixsite.com/neurodegenerative">网站(需要翻墙)</a>来提升青少年对于神经退行性疾病的意识',
 					]
 				},
 				{
 					project_name:'金属有机框架物：细胞摄取的染色技术优化和孔特性的计算机模拟',
 					project_discription:[
+						'论文题目:&nbsp;A Systems Biology Approach to Investigate the Role of Cholesterol in Neurodegenerative Diseases',
 						'研究包和技术制备的有机框架复合物的细胞摄取途径及其在细胞内命运，因新冠疫情的原因只完成细胞染色条件的优化',
 						'运用计算机进行Monte Carlo分子模拟研究金属有机框架与载体分子的相互作用',
+						'另和实验室同伴撰写了一篇论文的手稿：Cellular Uptake of Metal-Organic Frameworks: a Journey Into the Cell'
 					]
 				}
 			]
@@ -36,9 +39,11 @@ function show_education(){
 				{
 					project_name:'脂质体仿制药分析及表征方法的建立',
 					project_discription:[
+						'论文题目:&nbsp;Development of Analytical Methodologies and Characterization of Liposomal Generic Drugs',
 						'在体外评估和比较了原研药AmBisome®、两个在印度上市的仿制药和一个正在研发的仿制药的物理化学性质、毒性及抗真菌能力',
 						'帮助建立了Exparel®体外释放实验的方法，并且评估了其体内药物代谢动力学',
-						'在药学院研究会议上展示了AmBisome®课题的研究成果'
+						'在药学院研究会议上展示了AmBisome®课题的研究成果',
+						'发表论文:&nbsp;<a href="https://www.sciencedirect.com/science/article/pii/S0939641120302848?casa_token=vtsXpiiXEQ8AAAAA:YNKGqBFvbEuBsDwakgYK-741TsE5T1GYeKGlmAebpUYKBAJbf_ej0CYsflOSA0ZWhkPMowVPQw">Liu, Y., Mei, Z., Mei, L., Tang, J., Yuan, W., Srinivasan, S., ... & Schwendeman, A. S. (2020). Analytical method development and comparability study for AmBisome® and generic Amphotericin B liposomal products. European Journal of Pharmaceutics and Biopharmaceutics, 157, 241-249.</a>'
 					]
 				}
 			]
@@ -259,7 +264,7 @@ function show_skills(){
 	var skill_list = [
 		{
 			'编程CODING':[
-				'Python','JS','XML/HTML','CSS','SQL','Linux'
+				'Python','JS','XML','CSS','HTML','SQL','Linux'
 			]
 			
 		},
