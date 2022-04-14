@@ -15,3 +15,21 @@ const doc = window.document // 文档对象
 			    window.clearTimeout(tid)
 			    var tid = window.setTimeout(refreshRem, 300)
 			  })
+			  
+function IsPC () {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+        "SymbianOS", "Windows Phone",
+        "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+			alert('请使用电脑浏览')
+            break;
+        }
+    }
+    return flag;
+}
+let res = IsPC();
+console.log(res);
