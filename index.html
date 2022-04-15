@@ -52,6 +52,21 @@
 					document.getElementById('list4').className = 'list_item list_item_other'
 					document.getElementById('list5').className = 'list_item list_item_other'
 				}
+				
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+				if(scrollTop > document.getElementById('list1').getBoundingClientRect().top){
+					document.getElementById('scrollUp').style="visibility: visible";
+				}
+				else{
+					document.getElementById('scrollUp').style="visibility: hidden;";
+				}
+			}
+			
+			function scrollToTop(){
+				window.scrollTo({
+				  top: 0,
+				  behavior: 'smooth' 
+				})
 			}
 			
 			// 点击右侧导航滚动到对应到地方
@@ -74,7 +89,8 @@
 			
 		</script>
 		<img src="img/topimg.png" class="topImg">
-		<div class="body_container">
+		<img class="scroll_up_icon" src="img/up_arrow.svg" style="visibility: hidden;" onclick="scrollToTop()" id="scrollUp"></img>
+		<div class="body_container" id='full'>
 			<div class="topLine" style="user-select: none;">
 				<div class="logoName">
 					<div class="leftPara">{</div>
@@ -86,9 +102,9 @@
 				</div>
 				<div class="menu_container">
 					<a href="index.html" class="menu menu_selected">CV</a>
-					<!-- <a href="book_notes.html" class="menu menu_not_selected">读书笔记</a>
-					<a href="industry.html" class="menu menu_not_selected">行业随想</a>
-					<a href="study.html" class="menu menu_not_selected">各种学习</a> -->
+					<a href="book_notes.html" class="menu menu_not_selected">读书笔记</a>
+					<!-- <a href="industry.html" class="menu menu_not_selected">行业随想</a> -->
+					<!-- <a href="study.html" class="menu menu_not_selected">各种学习</a> -->
 				</div>
 			</div>
 			<div class="topLine_btm_padding">

@@ -117,7 +117,7 @@ function show_education(){
 				html_text += '</div>'
 				
 				
-				html_text += '<div class="main_subsection_title">课程</div>'
+				html_text += '<div class="main_subsection_title">主要课程</div>'
 				html_text += '<div class="main_year_course_container">'
 				for(let course_indiv in edu_list[edu].courses){
 					html_text += '<div class="main_year_course">'

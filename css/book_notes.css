@@ -1,0 +1,33 @@
+.book_list_container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.note{
+	color:#FFD200;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+
+.book_indiv_container{
+	width: 10rem;
+	height: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5rem;
+	margin-right: 2.5rem;
+}
+.book_indiv_icon{
+	width: 5rem;
+	height: 7rem;
+}
+
+.book_indiv_name{
+	color: #FFD200;
+	font-size: 0.7rem;
+}

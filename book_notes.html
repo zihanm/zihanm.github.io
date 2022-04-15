@@ -6,10 +6,55 @@
 		<style type="text/css">
 			@import url("./css/index.css");
 			@import url("css/public_style.css");
+			@import url("css/book_notes.css");
 		</style>
 	</head>
 	<body>
 		<script src="js/root_font_adj.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function book_show(){
+				const book_list = [
+					{
+						name:'《首席产品管1:从新手到行家》',
+						note_pic_url:'img/books/PM1.png',
+						note_pic_url_blur:'img/books/PM1_blur.png',
+						bookid:1,
+						isbn:'978-7-111-60657-4'
+					},
+					{
+						name:'《人工智能与医疗》',
+						note_pic_url:'img/books/AI_med.png',
+						note_pic_url_blur:'img/books/AI_med_blur.png',
+						bookid:2,
+						isbn:'978-7-301-30566-9'
+					},
+					{
+						name:'《元宇宙》',
+						note_pic_url:'img/books/metaverse.png',
+						note_pic_url_blur:'img/books/metaverse_blur.png',
+						bookid:3,
+						isbn:'978-7-5001-6691-7'
+					}
+				]
+				var html_book = []
+				for(let book in book_list){
+					var html_text = ''
+					html_text += '<div class="book_indiv_container" >'
+						html_text += '<a href="' + book_list[book].note_pic_url + '" download="book' + book_list[book].bookid.toString() + '">'
+							html_text += '<img src="' + book_list[book].note_pic_url_blur + '" class="book_indiv_icon" id=' +  book_list[book].bookid.toString() +'></img>'
+						html_text += '</a>'
+						html_text += '<div class="book_indiv_name">' + 'ISBN&nbsp;' + book_list[book].isbn + '</div>'
+						html_text += '<div class="book_indiv_name">' + book_list[book].name + '</div>'
+					html_text += '</div>'
+					html_book.push(html_text)
+				}
+				document.getElementById('book_list_anchor').innerHTML = html_book.join("");
+			}
+			window.onload = function(){
+				book_show()
+			}
+			
+		</script>
 		<img src="img/topimg.png" class="topImg">
 		<div class="body_container">
 			<div class="topLine">
@@ -24,14 +69,20 @@
 				<div class="menu_container">
 					<a href="index.html" class="menu menu_not_selected">CV</a>
 					<a href="book_notes.html" class="menu menu_selected">读书笔记</a>
-					<a href="industry.html" class="menu menu_not_selected">行业随想</a>
-					<a href="study.html" class="menu menu_not_selected">各种学习</a>
+					<!-- <a href="industry.html" class="menu menu_not_selected">行业随想</a> -->
+					<!-- <a href="study.html" class="menu menu_not_selected">各种学习</a> -->
 				</div>
 			</div>
 			<div class="topLine_btm_padding">
 				
 			</div>
 			
+			<div class="note">一些读书笔记...感兴趣的话可以点击图片直接下载</div>
+			
+			<div id="book_list_anchor" class="book_list_container"></div>
+			<div class="contact_me">
+				<img src="img/email_icon.svg" class="contact_me_icon">zihanmcn@126.com
+			</div>
 		</div>
 	</body>
 </html>
