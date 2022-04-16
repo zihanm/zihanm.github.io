@@ -105,7 +105,9 @@
 	padding-left: 0.5rem;
 	padding-right: 1rem;
 	margin-bottom: 0.5rem;
+	box-shadow: 0.1rem 0.1rem 0.1rem #cecece;
 }
+
 .main_year_tag{
 	color: #666666;
 	font-size: 0.7rem;
@@ -164,7 +166,7 @@
 	align-items: center;
 }
 .main_project_container{
-	width: fit-content;
+	width: 100%;
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
@@ -184,7 +186,8 @@
 	font-weight: bolder;
 }
 .main_project_discription_container{
-	width: calc(100% - 2.8rem);
+	/* width: calc(100% - 1.4rem); */
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -193,6 +196,8 @@
 	color: #504c41;
 	font-weight: normal;
 	padding-left: 1.4rem;
+	padding-right: 1.4rem;
+	box-sizing: border-box;
 }
 .main_project_discription_line{
 	width: inherit;

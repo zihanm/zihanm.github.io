@@ -6,10 +6,65 @@
 		<style type="text/css">
 			@import url("./css/index.css");
 			@import url("css/public_style.css");
+			@import url("css/study.css");
 		</style>
 	</head>
 	<body>
 		<script src="js/root_font_adj.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="marked/marked.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.getElementById ( 'md_anchor' ). innerHTML = marked ('# Marked in the browser\n\nRendered by **marked**.') ;
+		</script> -->
+		<script type="text/javascript">
+			function show_study_md(){
+				const md_list = [
+					{
+						title:'css学习笔记',
+						url:'md/css.md'
+					},
+					{
+						title:'HIVE学习笔记',
+						url:'md/HIVE.md'
+					},
+					{
+						title:'JS学习笔记',
+						url:'md/JS.md'
+					},
+					{
+						title:'MySQL学习笔记',
+						url:'md/MySQL.md'
+					},
+					{
+						title:'web学习笔记',
+						url:'md/web.md'
+					},
+					{
+						title:'UniCloud云开发学习笔记',
+						url:'md/UniCloud_dev.md'
+					}
+				]
+				var html_md = []
+				html_md.push('<div class="note">some of the notes / cheat sheets for coding... click links below to view .md</div>')
+				html_md.push('<div class="md_list">')
+				for(let md in md_list){
+					var html_text = ''
+					html_text += '<div class="md_indiv">'
+					
+						html_text += '<img src="img/link_icon.svg" class="link_icon"></img>' 
+						html_text += '<a href="' + md_list[md].url + '" class="md_indiv_link">' + md_list[md].title + '.md</a>'
+					
+					html_text += '</div>'
+					
+					html_md.push(html_text)
+				}
+				html_md.push('</div>')
+				document.getElementById ( 'md_anchor' ). innerHTML = html_md.join("");
+			}
+			
+			window.onload = function(){
+				show_study_md()
+			}
+		</script>
 		<img src="img/topimg.png" class="topImg">
 		<div class="body_container">
 			<div class="topLine">
@@ -24,14 +79,17 @@
 				<div class="menu_container">
 					<a href="index.html" class="menu menu_not_selected">CV</a>
 					<a href="book_notes.html" class="menu menu_not_selected">读书笔记</a>
-					<a href="industry.html" class="menu menu_not_selected">行业随想</a>
+					<!-- <a href="industry.html" class="menu menu_not_selected">行业随想</a> -->
 					<a href="study.html" class="menu menu_selected">各种学习</a>
 				</div>
 			</div>
 			<div class="topLine_btm_padding">
 				
 			</div>
-			
+			<div id="md_anchor">
+				
+			</div>
+			<!-- <a href="md/UniCloud_dev.md">unicloud</a> -->
 			<div class="contact_me">
 				<img src="img/email_icon.svg" class="contact_me_icon">zihanmcn@126.com&nbsp;&nbsp;(OPEN FOR FREELANCING)
 			</div>
