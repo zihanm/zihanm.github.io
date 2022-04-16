@@ -44,14 +44,14 @@
 					}
 				]
 				var html_md = []
-				html_md.push('<div class="note">some of the notes / cheat sheets for coding... click links below to view .md</div>')
+				html_md.push('<div class="note">some of the notes / cheat sheets for coding...</div>')
 				html_md.push('<div class="md_list">')
 				for(let md in md_list){
 					var html_text = ''
 					html_text += '<div class="md_indiv">'
 					
 						html_text += '<img src="img/link_icon.svg" class="link_icon"></img>' 
-						html_text += '<a href="' + md_list[md].url + '" class="md_indiv_link">' + md_list[md].title + '.md</a>'
+						html_text += '<a href="' + md_list[md].url + '" class="md_indiv_link" download="' + md_list[md].title + '.md">' + md_list[md].title + '.md</a>'
 					
 					html_text += '</div>'
 					
