@@ -11,7 +11,7 @@ function show_education(){
 				{
 					project_name:'一个用于研究胆固醇在神经退行性疾病中的作用的系统生物学方法',
 					project_discription:[
-						'论文题目:&nbsp;Metal-Organic Frameworks: Optimization of Cell Staining Technique for Cellular Uptake and Computational Characterization of Mesoporosity',
+						'论文题目:&nbsp;A Systems Biology Approach to Investigate the Role of Cholesterol in Neurodegenerative Diseases',
 						'从事一个系统生物学的课题来研究和模拟胆固醇在神经退行性疾病中的作用',
 						'专攻阿尔兹海默症的病理，并和计算机团队紧密沟通与合作，将代谢网络转化成petri网，搜集相关酶促反应的米氏方程参数和其它动力学参数，整合到神经元模型中',
 						'制作一个<a href="https://c3yrhckwpm.wixsite.com/neurodegenerative">网站(需要翻墙)</a>来提升青少年对于神经退行性疾病的意识',
@@ -20,7 +20,7 @@ function show_education(){
 				{
 					project_name:'金属有机框架物：细胞摄取的染色技术优化和孔特性的计算机模拟',
 					project_discription:[
-						'论文题目:&nbsp;A Systems Biology Approach to Investigate the Role of Cholesterol in Neurodegenerative Diseases',
+						'论文题目:&nbsp;Metal-Organic Frameworks: Optimization of Cell Staining Technique for Cellular Uptake and Computational Characterization of Mesoporosity',
 						'研究包和技术制备的有机框架复合物的细胞摄取途径及其在细胞内命运，因新冠疫情的原因只完成细胞染色条件的优化',
 						'运用计算机进行Monte Carlo分子模拟研究金属有机框架与载体分子的相互作用',
 						'另和实验室同伴撰写了一篇论文的手稿：Cellular Uptake of Metal-Organic Frameworks: a Journey Into the Cell'
