@@ -25,6 +25,10 @@
 .book_indiv_icon{
 	width: 5rem;
 	height: 7rem;
+	background-image:url(../img/placeholder_img.svg);
+	background-size: 2rem 2rem;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .book_indiv_name{
