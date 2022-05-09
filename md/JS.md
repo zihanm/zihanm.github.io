@@ -223,3 +223,27 @@ var a_context = a.getContext("2d");	// 必须为2d，可能会有3d
 Ref：https://cloud.tencent.com/developer/article/1474397
 
 Ref：https://developers.weixin.qq.com/miniprogram/dev/framework/server-ability/message-push.html
+
+
+
+# 封装使用JS文件
+
+```js
+// js文件中
+//封装的函数
+function count(str) {
+console.log(str)
+}
+ 
+//转化成小程序模板语言 这一步非常重要 不然无法正确调用
+module.exports = {
+count: count
+}
+
+
+// vue中
+var util = require ( '../../utils/util.js' );      //引用外部的js文件
+
+util.count( 'hehe' )          //调用
+```
+

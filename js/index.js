@@ -23,7 +23,7 @@ function show_education(){
 						'论文题目:&nbsp;Metal-Organic Frameworks: Optimization of Cell Staining Technique for Cellular Uptake and Computational Characterization of Mesoporosity',
 						'研究包和技术制备的有机框架复合物的细胞摄取途径及其在细胞内命运，因新冠疫情的原因只完成细胞染色条件的优化',
 						'运用计算机进行Monte Carlo分子模拟研究金属有机框架与载体分子的相互作用',
-						'另和实验室同伴撰写了一篇论文的手稿：Cellular Uptake of Metal-Organic Frameworks: a Journey Into the Cell'
+						'另和实验室同伴撰写了一篇论文的手稿：The Cellular Uptake of Metal-Organic Frameworks: a Journey into the Cell'
 					]
 				}
 			]
@@ -187,7 +187,7 @@ function show_career(){
 							'项目目标':'实现独立的线上一整套“评估-管理-干预”方案'
 						},
 						{
-							'个人行动':'以技术的身份参加了项目会议，主动与第三方运营公司对接。根据需求梳理用户路径与页面流程，完成前端代码，对关键业务流程用公众平台工具we分析埋点，对平台埋点数据和公司数据库分析(python + sql)用户行为、用户画像和转化漏斗，每月产出数据分析报告，辅助罗氏和第三方运营公司制定运营策略'
+							'个人行动':'以技术的身份参加了项目会议，主动与第三方运营公司对接。根据需求梳理用户路径与页面流程，完成前端代码，对关键业务流程用公众平台工具we分析埋点，对平台埋点数据和公司数据库分析(python + sql)用户行为、用户画像和转化漏斗，每月产出数据分析报告，辅助罗氏和第三方运营公司制定运营策略。为了保证用户数据安全，与CTO配合完成了数据加密解密的工作'
 						},
 						{
 							'项目结果':'体检活动上线两个月内，完成了255位用户的记忆健康体检；通过公众号文章PGC与注册人数的关系，帮助第三方运营公司及时调整PGC，增加注册数'
@@ -195,7 +195,7 @@ function show_career(){
 					]
 				}
 			],
-			duties:['国内外投融资路演及对接(天使轮、天使+轮)','企业合作洽谈','老博会参展','SCI论文实验数据分析和撰写','海外商务洽谈','参与公司CXO天使+轮商业模式的探讨','公众号文章撰写','参加留学生创业培训','中小企业培训']
+			duties:['国内外投融资路演及对接(天使轮、天使+轮)','园区、企业合作洽谈','老博会参展','SCI论文实验数据分析和撰写','海外商务洽谈','参与公司CXO天使+轮商业模式的探讨','公众号文章撰写','参加留学生创业培训','中小企业培训']
 		}
 	]
 	var html_career = []
@@ -345,7 +345,7 @@ function show_freelancing(){
 							'个人行动':'前期的论文研究和功能、界面流程的梳理，HBuilder X前端代码和云数据库的建立，及原始数据清理、分析和可视化。'
 						},
 						{
-							'项目结果':'<a href="http://signage.tju-audrc.cn/#/">平台交付后</a>，实验部分被用于一硕士课题的研究，辅助设计部分被用于申请专利，整个研究被剑桥大学Inclusive Design Toolkit team报道'
+							'项目结果':'<a href="http://signage.tju-audrc.cn/#/">平台交付后</a>，实验部分被用于一硕士课题的研究，辅助设计部分被用于申请专利（CN114444960A；CN114444188A），整个研究被剑桥大学Inclusive Design Toolkit team报道'
 						}
 					]
 				}
