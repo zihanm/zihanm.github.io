@@ -345,7 +345,7 @@ function show_freelancing(){
 							'个人行动':'前期的论文研究和功能、界面流程的梳理，HBuilder X前端代码和云数据库的建立，及原始数据清理、分析和可视化。'
 						},
 						{
-							'项目结果':'<a href="http://signage.tju-audrc.cn/#/">平台交付后</a>，实验部分被用于一硕士课题的研究，辅助设计部分被用于申请专利（CN114444960A；CN114444188A），整个研究被剑桥大学Inclusive Design Toolkit team报道'
+							'项目结果':'<a href="http://signage.tju-audrc.cn/#/">平台交付后</a>，实验部分被用于一硕士课题的研究，辅助设计部分被用于申请专利（CN114444960A；CN114444188A）'
 						}
 					]
 				}
