@@ -23,7 +23,7 @@ function show_education(){
 						'论文题目:&nbsp;Metal-Organic Frameworks: Optimization of Cell Staining Technique for Cellular Uptake and Computational Characterization of Mesoporosity',
 						'研究包和技术制备的有机框架复合物的细胞摄取途径及其在细胞内命运，因新冠疫情的原因只完成细胞染色条件的优化',
 						'运用计算机进行Monte Carlo分子模拟研究金属有机框架与载体分子的相互作用',
-						'另和实验室同伴撰写了一篇论文的手稿：The Cellular Uptake of Metal-Organic Frameworks: a Journey into the Cell'
+						'另和实验室同伴撰写了一篇论文的手稿（Chem Society即将发表）：The Cellular Uptake of Metal-Organic Frameworks: a Journey into the Cell'
 					]
 				}
 			]
@@ -193,9 +193,26 @@ function show_career(){
 							'项目结果':'体检活动上线两个月内，完成了255位用户的记忆健康体检；通过公众号文章PGC与注册人数的关系，帮助第三方运营公司及时调整PGC，增加注册数'
 						}
 					]
+				},
+				{
+					project_name:'术后谵妄预警系统&nbsp;|&nbsp;立足科研',
+					project_discription:[
+						{
+							'项目背景':'术后谵妄在老年人中有这很高的发病率，但是是被忽视的一个急性临床现象'
+						},
+						{
+							'项目目标':'及时发现潜在谵妄病人，改善手术预后'
+						},
+						{
+							'个人行动':'通过文献调研、讲座学习和临床试验检索，筛选出可以使用的谵妄评估方式，结合公司已有技术，整理提出可行的、新颖的评估方法。定期与项目方沟通，确定解决方案的流程。根据世界卫生组织对eHealth的monitor与evaluation的方法，确定数据分析指标体系。'
+						},
+						{
+							'项目结果':'项目仍然在进行中'
+						}
+					]
 				}
 			],
-			duties:['国内外投融资路演及对接(天使轮、天使+轮)','园区、企业合作洽谈','老博会参展','SCI论文实验数据分析和撰写','海外商务洽谈','参与公司CXO天使+轮商业模式的探讨','公众号文章撰写','参加留学生创业培训','中小企业培训']
+			duties:['国内外投融资路演及对接(天使轮、天使+轮)','园区、企业合作洽谈','老博会参展','SCI论文实验数据分析和撰写','疾病预测模型等其它机器学习模型','海外商务洽谈','参与公司CXO天使+轮商业模式的探讨','公众号文章撰写','参加留学生创业培训','参加中小企业培训']
 		}
 	]
 	var html_career = []
