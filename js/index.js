@@ -23,7 +23,7 @@ function show_education(){
 						'论文题目:&nbsp;Metal-Organic Frameworks: Optimization of Cell Staining Technique for Cellular Uptake and Computational Characterization of Mesoporosity',
 						'研究包和技术制备的有机框架复合物的细胞摄取途径及其在细胞内命运，因新冠疫情的原因只完成细胞染色条件的优化',
 						'运用计算机进行Monte Carlo分子模拟研究金属有机框架与载体分子的相互作用',
-						'另和实验室同伴撰写了一篇论文的手稿（Chem Society即将发表）：The Cellular Uptake of Metal-Organic Frameworks: a Journey into the Cell'
+						'发表论文:&nbsp;<a href="https://pubs.rsc.org/en/content/articlehtml/2022/cs/d0cs01414a">Linnane, E., Haddad, S., Melle, F., Mei, Z., & Fairen-Jimenez, D. (2022). The uptake of metal–organic frameworks: a journey into the cell. Chemical Society Reviews.</a>'
 					]
 				}
 			]
@@ -43,7 +43,7 @@ function show_education(){
 						'在体外评估和比较了原研药AmBisome®、两个在印度上市的仿制药和一个正在研发的仿制药的物理化学性质、毒性及抗真菌能力',
 						'帮助建立了Exparel®体外释放实验的方法，并且评估了其体内药物代谢动力学',
 						'在药学院研究会议上展示了AmBisome®课题的研究成果',
-						'发表论文:&nbsp;<a href="https://www.sciencedirect.com/science/article/pii/S0939641120302848?casa_token=vtsXpiiXEQ8AAAAA:YNKGqBFvbEuBsDwakgYK-741TsE5T1GYeKGlmAebpUYKBAJbf_ej0CYsflOSA0ZWhkPMowVPQw">Liu, Y., Mei, Z., Mei, L., Tang, J., Yuan, W., Srinivasan, S., ... & Schwendeman, A. S. (2020). Analytical method development and comparability study for AmBisome® and generic Amphotericin B liposomal products. European Journal of Pharmaceutics and Biopharmaceutics, 157, 241-249.</a>'
+						'发表论文:&nbsp;<a href="https://www.sciencedirect.com/science/article/pii/S0939641120302848?casa_token=vtsXpiiXEQ8AAAAA:YNKGqBFvbEuBsDwakgYK-741TsE5T1GYeKGlmAebpUYKBAJbf_ej0CYsflOSA0ZWhkPMowVPQw">Liu, Y., Mei, Z., Mei, L., Tang, J., Yuan, W., Srinivasan, S., ... & Schwendeman, A. S. (2020). Liu, Y., Mei, Z., Mei, L., Tang, J., Yuan, W., Srinivasan, S., ... & Schwendeman, A. S. (2020). Analytical method development and comparability study for AmBisome® and generic Amphotericin B liposomal products. European Journal of Pharmaceutics and Biopharmaceutics, 157, 241-249.</a>'
 					]
 				}
 			]
@@ -195,7 +195,7 @@ function show_career(){
 					]
 				},
 				{
-					project_name:'术后谵妄预警系统&nbsp;|&nbsp;立足科研',
+					project_name:'术后谵妄预警系统:项目管理&nbsp;|&nbsp;立足科研',
 					project_discription:[
 						{
 							'项目背景':'术后谵妄在老年人中有这很高的发病率，但是是被忽视的一个急性临床现象'
