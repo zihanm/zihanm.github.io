@@ -20,24 +20,64 @@ input.addEventListener('change', function() {
     // Wait for the image to load
     img.addEventListener('load', function() {
 		console.log('analyzing')
-		// Extract the two most prominent colors
+		document.querySelector('#result').innerHTML = '';
 		const colorThief = new ColorThief();
-		const colors = colorThief.getPalette(img, 2);
-		const color1 = colors[0];
-		const color2 = colors[1];
-		// Calculate the lightness of each color
-		const l1 = getLightness(color1)
-		const l2 = getLightness(color2)
-		// Calculate the color contrast
-		const contrast = (l1 + 0.05) / (l2 + 0.05);
-		// Display the results
-		const color1Hex = rgbToHex(color1);
-		const color2Hex = rgbToHex(color2);
-		const contrastRatio = contrast.toFixed(2);
-		// 前端渲染
+		// default is 10 colors
+		const colors = colorThief.getPalette(img,2);
+		// var allColors = colorThief.getPalette(img, 2);
+		console.log(colors)
+		var combos = makeCombination(colors)
+		for(let comboIndex in combos){
+			
+			var color1 = combos[comboIndex][0];
+			var color2 = combos[comboIndex][1];
+			// Calculate the lightness of each color
+			var l1 = getLightness(color1)
+			var l2 = getLightness(color2)
+			// Calculate the color contrast
+			var contrast = (l1 + 0.05) / (l2 + 0.05);
+			// Display the results
+			var color1Hex = rgbToHex(color1);
+			var color2Hex = rgbToHex(color2);
+			var contrastRatio = contrast.toFixed(2);
+			// 前端渲染
+			var colorHexs = [color1Hex, color2Hex]
+			var colorRgbs = [combos[comboIndex][0], combos[comboIndex][1]]
+			// console.log(colorHexs)
+			// console.log(colorRgbs)
+			let i = 0
+			while(i < colorHexs.length){
+				let line = '<div class = "colorLine">'
+				let st = '<div class="color_palette" style="background-color:'
+				st += colorHexs[i]
+				st += '"></div>'
+				line += st
+				
+				
+				line += '主要颜色'
+				line += (i+1).toString()
+				line += ':&nbsp&nbsp'
+				line += colorHexs[i]
+				line += ', RGB('
+				line += colorRgbs[i][0]
+				line += ','
+				line += colorRgbs[i][1]
+				line += ','
+				line += colorRgbs[i][2]
+				line += ')'
+				
+				line += '</div>'
+				
+				document.querySelector('#result').innerHTML += line
+				
+				i += 1
+			}
+			
+			document.querySelector('#result').innerHTML += '<p>对比度: ' + contrastRatio + '</p>'
+			
+		}
 		
-		const result = `主要颜色 1: ${color1Hex}, RGB(${color1})<br>主要颜色 2: ${color2Hex}, RGB(${color2})<br>对比度: ${contrastRatio}`;
-		document.querySelector('#result').innerHTML = result;
+		
 	});
   };
 });
@@ -58,4 +98,24 @@ function rgbAdj(c){
 
 function getLightness(color_rgb){
 	return 0.2126 * rgbAdj(color_rgb[0]) + 0.7152 * rgbAdj(color_rgb[1]) + 0.0722 * rgbAdj(color_rgb[2])
+}
+
+function makeCombination(colors){
+	const combinations = [];
+	
+	for (let i = 0; i < colors.length; i++) {
+	  for (let j = i + 1; j < colors.length; j++) {
+	    const combination = [colors[i], colors[j]];
+	
+	    // Add the combination to the list if it doesn't already exist
+	    if (!combinations.some(c => c.toString() === combination.toString())) {
+	      combinations.push(combination);
+	    }
+	  }
+	
+	// Print the list of unique color combinations
+
+	}
+	console.log(combinations);
+	return combinations
 }
