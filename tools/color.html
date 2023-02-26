@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="placeAtMiddle">
+	<head>
+		<meta charset="utf-8" />
+		<title>图像颜色识别</title>
+		<style type="text/css">
+			@import url("../css/index.css");
+			@import url("../css/public_style.css");
+			@import url("../css/color.css");
+		</style>
+	</head>
+	<body>
+		<img src="img/topimg.png" class="topImg">
+		<div class="body_container">
+			<div class="topLine_btm_padding">
+				
+			</div>
+			
+			<div class="note">色彩对比度计算器</div>
+			
+			<form class="upload_pic">
+			  <label for="file">选择一张图片:</label>
+			  <input type="file" id="file" accept="image/*">
+			</form>
+			<canvas id="canvas" class="image_preview"></canvas>
+			<div id="result" class="color_res"></div>
+			<!-- <div class="contact_me">
+				<img src="img/email_icon.svg" class="contact_me_icon">zihanmcn@126.com&nbsp;&nbsp;(OPEN FOR FREELANCING)
+			</div> -->
+		</div>
+		<script src="../node_modules/colorthief/dist/color-thief.umd.js"></script>
+		<script src="../js/root_font_adj.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/color_contrast_calculator.js"></script>
+		<script type="text/javascript">
+			// const colorThief = new ColorThief();
+			//     const img = document.querySelector('img');
+			
+			//     // Make sure image is finished loading
+			//     if (img.complete) {
+			//       colorThief.getColor(img);
+			//     } else {
+			//       image.addEventListener('load', function() {
+			//         colorThief.getColor(img);
+			//       });
+			//     }
+			
+		</script>
+		
+	</body>
+</html>

@@ -483,7 +483,7 @@ function show_freelancing(){
 
 function show_intern(){
 	var intern_list = [
-		{
+		/* {
 			company:'一郎软件',
 			date_tag:['Oct.', '2022'],
 			role:'数据分析师(兼职)',
@@ -496,7 +496,7 @@ function show_intern(){
 					]
 				}
 			]
-		},
+		}, */
 		{
 			company:'彬彬教育',
 			date_tag:['Apr.', '2020'],

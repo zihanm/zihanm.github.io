@@ -1,0 +1,57 @@
+.book_list_container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.note{
+	color:#FFD200;
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+.book_indiv_container{
+	width: 10rem;
+	height: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5rem;
+	margin-right: 2.5rem;
+}
+.book_indiv_icon{
+	width: 5rem;
+	height: 7rem;
+	background-image:url(../img/placeholder_img.svg);
+	background-size: 2rem 2rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.upload_pic{
+	color: #FFD200;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.image_preview{
+	max-width: 10rem;
+	max-height: 10rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.color_res{
+	color: #ffffff;
+	font-size: 1rem;
+	line-height: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
