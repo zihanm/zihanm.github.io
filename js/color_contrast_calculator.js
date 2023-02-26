@@ -54,7 +54,7 @@ input.addEventListener('change', function() {
 				line += st
 				
 				
-				line += '主要颜色'
+				line += '颜色'
 				line += (i+1).toString()
 				line += ':&nbsp&nbsp'
 				line += colorHexs[i]
