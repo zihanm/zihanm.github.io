@@ -9,7 +9,7 @@
 .note{
 	color:#FFD200;
 	font-size: 3rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .book_indiv_container{
@@ -39,10 +39,12 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 }
-
+.input_label{
+	margin-top: 1.5rem;
+}
 .image_preview{
-	max-width: 7rem;
-	max-height: 7rem;
+	max-width: 10rem;
+	max-height: 10rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }
@@ -57,10 +59,16 @@
 }
 .colorLine{
 	width: fit-content;
-	height: 1.5rem;
+	height: 2rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+.color_input{
+	width: 2rem;
+	height: 1.5rem;
+	padding: 0;
+	margin-left: 1rem;
 }
 .color_palette{
 	width: 1rem;
