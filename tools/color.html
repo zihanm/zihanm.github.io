@@ -17,6 +17,18 @@
 			
 			<div class="note">色彩对比度计算器</div>
 			
+			<form class="numeric_calc">
+				<label for="c1">选择或输入第一个颜色:</label>
+				<input type="color" id="c1">
+				
+				<label for="c2">选择或输入第二个颜色:</label>
+				<input type="color" id="c2">
+				
+				<div class="cal_btn" onclick="numeric_calc()">计算</div>
+				<div id="numeric_calc_res" class="numeric_calc_res"></div>
+				
+			</form>
+			
 			<form class="upload_pic">
 			  <label for="file">选择一张图片:</label>
 			  <input type="file" id="file" accept="image/*">

@@ -128,3 +128,28 @@ function makeCombination(colors){
 	return combinations
 }
 
+
+
+// 输入两个颜色，计算对比度并呈现
+function hexToRgb(hex) {
+    var m = hex.match(/^#?([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i);
+    return [parseInt(m[1], 16), parseInt(m[2], 16) , parseInt(m[3], 16)]
+}
+
+function numeric_calc(){
+	console.log('calc')
+	var c1 = document.getElementById('c1').value
+	var c2 = document.getElementById('c2').value
+	console.log(c1)
+	var l1 = getLightness(hexToRgb(c1))
+	console.log(l1)
+	var l2 = getLightness(hexToRgb(c2))
+	console.log(l1)
+	// Calculate the color contrast
+	var contrast = (Math.max((l1 + 0.05), (l2 + 0.05))) / (Math.min((l1 + 0.05), (l2 + 0.05)));
+	
+	var contrastRatio = contrast.toFixed(2);
+	document.querySelector('#numeric_calc_res').innerHTML = '颜色&nbsp;' + c1 + '&nbsp;和颜色&nbsp;' + c2 + '&nbsp;的对比度为&nbsp;&nbsp;' + contrastRatio
+	
+	return
+}

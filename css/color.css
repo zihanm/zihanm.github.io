@@ -31,6 +31,40 @@
 	background-repeat: no-repeat;
 }
 
+.numeric_calc{
+	color: #FFD200;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	border-bottom: 0.1rem dashed #FFD200;
+	padding-bottom: 1rem;
+}
+
+.cal_btn{
+	width: 4rem;
+	height: 2rem;
+	font-size: 1rem;
+	border-radius: 2rem;
+	box-sizing: border-box;
+	border: 0.1rem solid #FFD200;
+	color: #FFD200;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+.numeric_calc_res{
+	color: #FFD200;
+	font-size: 1rem;
+}
+
+.cal_btn:hover{
+	cursor: pointer;
+}
 .upload_pic{
 	color: #FFD200;
 	font-size: 1.5rem;
