@@ -17,6 +17,18 @@
 			
 			<div class="note">色彩对比度计算器</div>
 			
+			
+			
+			<form class="upload_pic">
+			  <label for="file">选择一张图片:</label>
+			  <input type="file" id="file" accept="image/*">
+			  <!-- 
+			  <label for="color" class='input_label'>选择一个颜色</label>
+			  <input type="color" id="color"> -->
+			</form>
+			<canvas id="canvas" class="image_preview"></canvas>
+			<div id="result" class="color_res"></div>
+			
 			<form class="numeric_calc">
 				<label for="c1">选择或输入第一个颜色:</label>
 				<input type="color" id="c1">
@@ -28,16 +40,6 @@
 				<div id="numeric_calc_res" class="numeric_calc_res"></div>
 				
 			</form>
-			
-			<form class="upload_pic">
-			  <label for="file">选择一张图片:</label>
-			  <input type="file" id="file" accept="image/*">
-			  <!-- 
-			  <label for="color" class='input_label'>选择一个颜色</label>
-			  <input type="color" id="color"> -->
-			</form>
-			<canvas id="canvas" class="image_preview"></canvas>
-			<div id="result" class="color_res"></div>
 			<!-- <div class="contact_me">
 				<img src="img/email_icon.svg" class="contact_me_icon">zihanmcn@126.com&nbsp;&nbsp;(OPEN FOR FREELANCING)
 			</div> -->
