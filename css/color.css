@@ -1,10 +1,3 @@
-.book_list_container{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
 
 .note{
 	color:#FFD200;
@@ -12,23 +5,22 @@
 	margin-bottom: 1rem;
 }
 
-.book_indiv_container{
-	width: 10rem;
-	height: 10rem;
+.color_body_container{
+	width: calc(100vw - 9rem - 10rem);
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.function_column{
+	width: 50%;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 5rem;
-	margin-right: 2.5rem;
-}
-.book_indiv_icon{
-	width: 5rem;
-	height: 7rem;
-	background-image:url(../img/placeholder_img.svg);
-	background-size: 2rem 2rem;
-	background-position: center;
-	background-repeat: no-repeat;
+	justify-content: flex-start;
+	align-items: flex-start;
+	box-sizing: border-box;
 }
 
 .numeric_calc{
@@ -40,9 +32,10 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100%;
-	border-bottom: 0.1rem dashed #FFD200;
 	padding-bottom: 1rem;
 }
+
+
 
 .cal_btn{
 	width: 4rem;
