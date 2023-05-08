@@ -109,7 +109,7 @@
 
 /* Use the previously defined animation on any element that has a 'my-border-class' class */
 .colorR {
-  animation: borderColorTransition 81s linear infinite;
+  animation: borderColorTransition 121.5s linear infinite;
 }
 
 /* Define a CSS keyframes animation with the desired background-color transitions */
