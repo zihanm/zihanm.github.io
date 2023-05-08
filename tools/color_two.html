@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>双色对比</title>
+		<style type="text/css">
+			@import url('color_common.css');
+            @import url('color_two.css');
+			
+			.bg{
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				flex-shrink: 0;
+				overflow: hidden;
+                flex-shrink: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<script src="../js/root_font_adj_color.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			window.onload = function() {
+
+			};
+		</script>
+		<div class="background_color bg">
+            <div class="navigatorLine">
+                <div class="colorFormatBlock">
+                    <div class="colorFormats">
+                        <p class="indivColorFormat">HEX</p>
+                        <p class="indivColorFormat">RGB</p>
+                        <p class="indivColorFormat">CMYK</p>
+                        <p class="indivColorFormat">LAB</p>
+                        <p class="indivColorFormat">NCS</p>
+                    </div>
+                    <div class="purpose">测试图标前景和背景颜色组合是否符合<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank" class="black-link">WCAG 2.0 最小对比度</a>。</div>
+                </div>
+                <a href="color_landing.html"  class="logo">
+                    <img src="../img/color_logo.png" class="logoImg">
+                </a>
+            </div>
+
+			
+
+			<div class="colorMenu">
+                <a href="" class="colorMenuItem">多色对比</a>
+                <a href="color_two.html" class="colorMenuItem">双色对比</a>
+                <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="colorMenuItem" target="_blank">关于WCAG2.0对比</a>            
+            </div>
+		</div>
+		
+	</body>
+</html>

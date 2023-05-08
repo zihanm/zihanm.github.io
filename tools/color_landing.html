@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>图像颜色识别</title>
+		<style type="text/css">
+			@import url('color_common.css');
+			@import url('landing.css');
+			:root{
+				--bgR: calc(100vw / 1920 * 654);
+			}
+			.bg{
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				flex-shrink: 0;
+				overflow: hidden;
+			}
+			.titleLine{
+				width: 100%;
+				height: 10.44rem;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				font-weight: 900;
+				font-size: 6rem;
+				line-height: 7.25rem;
+				box-sizing: border-box;
+				border-top: 0.13rem solid #000000;
+				border-bottom: 0.13rem solid #000000;
+				padding-left: calc(100vw / 1920 * 164);
+				position: relative;
+				z-index: 1000;
+			}
+			.titleBlack{
+				color: #000000;
+			}
+			.titleWhite{
+				color: #ffffff;
+			}
+			.twoRounds{
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: fixed;
+				margin-top: auto;
+				margin-bottom: auto;
+
+			}
+			.leftRound{
+				width: var(--bgR);
+				height: var(--bgR);
+				border-radius: 50%;
+				mix-blend-mode: multiply;
+				filter: blur(1.875rem);
+				
+				/* background: #0F5DD5; */
+				position: relative;
+				left: 3.6rem;
+				z-index: 2;
+			}
+			.rightRound{
+				width: var(--bgR);
+				height: var(--bgR);
+				border-radius: 50%;
+				mix-blend-mode: multiply;
+				border: 5.625rem solid;
+				filter: blur(1.875rem);
+				box-sizing: border-box;
+				
+				position: relative;
+				right: 3.6rem;
+				z-index: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.whiteSm{
+				width:  calc(100vw / 1920 * 242);
+				height: calc(100vw / 1920 * 242);
+				border-radius: 50%;
+				mix-blend-mode: multiply;
+				box-sizing: border-box;
+				background-color: #ffffff;
+				filter: blur(1.875rem);
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<script src="../js/root_font_adj_color.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			window.onload = function() {
+
+			};
+		</script>
+		<div class="background_color bg">
+			<div class="navigatorLine">
+                <div></div>
+				<img src="../img/color_logo.png" class="logo">
+
+            </div>
+			<div class="twoRounds">
+				<div class="leftRound colorL"></div>
+				<div class="rightRound colorR">
+					<div class="whiteSm"></div>
+				</div>
+			</div>
+
+			
+			<div class="titleLine">
+				<p class="titleBlack">
+					CON
+				</p>
+				<p class="titleWhite">
+					TRAST
+				</p>
+			</div>
+
+			<div class="colorMenu">
+                <a href="" class="colorMenuItem">多色对比</a>
+                <a href="color_two.html" class="colorMenuItem">双色对比</a>
+                <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="colorMenuItem" target="_blank">关于WCAG2.0对比</a>
+            </div>
+		</div>
+		
+	</body>
+</html>

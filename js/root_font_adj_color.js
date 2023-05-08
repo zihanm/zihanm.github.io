@@ -4,7 +4,7 @@ const doc = window.document // 文档对象
 			
 			// 根据视窗宽度，设置根字体大小
 			  const refreshRem = () => {
-			    const rem = docEl.getBoundingClientRect().width / screenWid * 16
+			    const rem = docEl.getBoundingClientRect().width / 1920 * 16
 			    docEl.style.fontSize = rem + 'px'
 			  }
 			

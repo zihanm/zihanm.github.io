@@ -1,0 +1,219 @@
+/* Create a CSS animation named 'colorL' */
+.colorL{
+  animation-name: colorL_loop;
+  animation-duration: 64s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes colorL_loop {
+  /* Define the individual color stops with time */
+  0% {
+    background-color: #FFCDBF;
+  }
+  3.125% {
+    background-color: #F78B83;
+  }
+  6.25% {
+    background-color: #D0202B;
+  }
+  9.375% {
+    background-color: #FFCF7A;
+  }
+  12.5% {
+    background-color: #F75D00;
+  }
+  15.625% {
+    background-color: #D26520;
+  }
+  18.75% {
+    background-color: #AC492E;
+  }
+  21.875% {
+    background-color: #FAECC5;
+  }
+  25% {
+    background-color: #FAE87F;
+  }
+  28.125% {
+    background-color: #F0D600;
+  }
+  31.25% {
+    background-color: #F6B300;
+  }
+  34.375% {
+    background-color: #DEE24D;
+  }
+  37.5% {
+    background-color: #79CCA6;
+  }
+  40.625% {
+    background-color: #83C77F;
+  }
+  43.75% {
+    background-color: #09BB83;
+  }
+  46.875% {
+    background-color: #00A46A;
+  }
+  50% {
+    background-color: #00798B;
+  }
+  53.125% {
+    background-color: #006C5B;
+  }
+  56.25% {
+    background-color: #00483A;
+  }
+  59.375% {
+    background-color: #BADFEC;
+  }
+  62.5% {
+    background-color: #80A6C3;
+  }
+  65.625% {
+    background-color: #58A8E0;
+  }
+  68.75% {
+    background-color: #0089CA;
+  }
+  71.875% {
+    background-color: #3A8BC3;
+  }
+  75% {
+    background-color: #005EA0;
+  }
+  78.125% {
+    background-color: #003F75;
+  }
+  81.25% {
+    background-color: #00405F;
+  }
+  84.375% {
+    background-color: #173661;
+  }
+  87.5% {
+    background-color: #556E83;
+  }
+  90.625% {
+    background-color: #6C849A;
+  }
+  93.75% {
+    background-color: #C8A2D7;
+  }
+  96.875% {
+    background-color: #883070;
+  }
+  100% {
+    background-color: #7E1D40;
+  }
+}
+
+.colorR{
+    animation-name: colorR_loop;
+    animation-duration: 64s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+/* Define a new keyframes animation named 'colorL_reverse' */
+@keyframes colorR_loop {
+  /* Define the individual color stops in a reverse order */
+  0% {
+    border-color: #7E1D40;
+  }
+  3.125% {
+    border-color: #883070;
+  }
+  6.25% {
+    border-color: #C8A2D7;
+  }
+  9.375% {
+    border-color: #6C849A;
+  }
+  12.5% {
+    border-color: #556E83;
+  }
+  15.625% {
+    border-color: #173661;
+  }
+  18.75% {
+    border-color: #00405F;
+  }
+  21.875% {
+    border-color: #003F75;
+  }
+  25% {
+    border-color: #005EA0;
+  }
+  28.125% {
+    border-color: #3A8BC3;
+  }
+  31.25% {
+    border-color: #0089CA;
+  }
+  34.375% {
+    border-color: #58A8E0;
+  }
+  37.5% {
+    border-color: #80A6C3;
+  }
+  40.625% {
+    border-color: #BADFEC;
+  }
+  43.75% {
+    border-color: #00483A;
+  }
+  46.875% {
+    border-color: #006C5B;
+  }
+  50% {
+    border-color: #00798B;
+  }
+  53.125% {
+    border-color: #00A46A;
+  }
+  56.25% {
+    border-color: #09BB83;
+  }
+  59.375% {
+    border-color: #83C77F;
+  }
+  62.5% {
+    border-color: #79CCA6;
+  }
+  65.625% {
+    border-color: #DEE24D;
+  }
+  68.75% {
+    border-color: #F6B300;
+  }
+  71.875% {
+    border-color: #F0D600;
+  }
+  75% {
+    border-color: #FAE87F;
+  }
+  78.125% {
+    border-color: #FAECC5;
+  }
+  81.25% {
+    border-color: #AC492E;
+  }
+  84.375% {
+    border-color: #D26520;
+  }
+  87.5% {
+    border-color: #F75D00;
+  }
+  90.625% {
+    border-color: #FFCF7A;
+  }
+  93.75% {
+    border-color: #D0202B;
+  }
+  96.875% {
+    border-color: #F78B83;
+  }
+  100% {
+    border-color: #FFCDBF;
+  }
+}
