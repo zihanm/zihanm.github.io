@@ -1,219 +1,232 @@
-/* Create a CSS animation named 'colorL' */
-.colorL{
-  animation-name: colorL_loop;
-  animation-duration: 64s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-@keyframes colorL_loop {
-  /* Define the individual color stops with time */
+/* Define a CSS keyframes animation with the desired border-color transitions */
+@keyframes borderColorTransition {
   0% {
-    background-color: #FFCDBF;
+    border-color: #624029;
   }
-  3.125% {
-    background-color: #F78B83;
+  3% {
+    border-color: #6F3B21;
   }
-  6.25% {
-    background-color: #D0202B;
+  6% {
+    border-color: #85442A;
   }
-  9.375% {
-    background-color: #FFCF7A;
+  9% {
+    border-color: #78583C;
   }
-  12.5% {
-    background-color: #F75D00;
+  12% {
+    border-color: #BE8D4A;
   }
-  15.625% {
-    background-color: #D26520;
+  15% {
+    border-color: #8D8275;
   }
-  18.75% {
-    background-color: #AC492E;
+  18% {
+    border-color: #BBA68D;
   }
-  21.875% {
-    background-color: #FAECC5;
+  21% {
+    border-color: #645188;
   }
-  25% {
-    background-color: #FAE87F;
+  24% {
+    border-color: #7E1D40;
   }
-  28.125% {
-    background-color: #F0D600;
+  27% {
+    border-color: #883070;
   }
-  31.25% {
-    background-color: #F6B300;
+  30% {
+    border-color: #C8A2D7;
   }
-  34.375% {
-    background-color: #DEE24D;
+  33% {
+    border-color: #6C849A;
   }
-  37.5% {
-    background-color: #79CCA6;
+  36% {
+    border-color: #556E83;
   }
-  40.625% {
-    background-color: #83C77F;
+  39% {
+    border-color: #173661;
   }
-  43.75% {
-    background-color: #09BB83;
+  42% {
+    border-color: #00405F;
   }
-  46.875% {
-    background-color: #00A46A;
+  45% {
+    border-color: #003F75;
   }
-  50% {
-    background-color: #00798B;
+  48% {
+    border-color: #005EA0;
   }
-  53.125% {
-    background-color: #006C5B;
+  51% {
+    border-color: #3A8BC3;
   }
-  56.25% {
-    background-color: #00483A;
+  54% {
+    border-color: #0089CA;
   }
-  59.375% {
-    background-color: #BADFEC;
+  57% {
+    border-color: #58A8E0;
   }
-  62.5% {
-    background-color: #80A6C3;
+  60% {
+    border-color: #80A6C3;
   }
-  65.625% {
-    background-color: #58A8E0;
+  63% {
+    border-color: #BADFEC;
   }
-  68.75% {
-    background-color: #0089CA;
+  66% {
+    border-color: #00483A;
   }
-  71.875% {
-    background-color: #3A8BC3;
+  69% {
+    border-color: #006C5B;
+  }
+  72% {
+    border-color: #00798B;
   }
   75% {
-    background-color: #005EA0;
+    border-color: #00A46A;
   }
-  78.125% {
-    background-color: #003F75;
+  78% {
+    border-color: #09BB83;
   }
-  81.25% {
-    background-color: #00405F;
+  81% {
+    border-color: #83C77F;
   }
-  84.375% {
-    background-color: #173661;
+  84% {
+    border-color: #79CCA6;
   }
-  87.5% {
-    background-color: #556E83;
+  87% {
+    border-color: #DEE24D;
   }
-  90.625% {
-    background-color: #6C849A;
+  90% {
+    border-color: #F6B300;
   }
-  93.75% {
-    background-color: #C8A2D7;
+  93% {
+    border-color: #F0D600;
   }
-  96.875% {
-    background-color: #883070;
+  96% {
+    border-color: #FAE87F;
+  }
+  99% {
+    border-color: #FAECC5;
   }
   100% {
-    background-color: #7E1D40;
+    border-color: #AC492E;
   }
 }
 
-.colorR{
-    animation-name: colorR_loop;
-    animation-duration: 64s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-/* Define a new keyframes animation named 'colorL_reverse' */
-@keyframes colorR_loop {
-  /* Define the individual color stops in a reverse order */
+/* Use the previously defined animation on any element that has a 'my-border-class' class */
+.colorR {
+  animation: borderColorTransition 81s linear infinite;
+}
+
+/* Define a CSS keyframes animation with the desired background-color transitions */
+@keyframes backgroundColorTransition {
   0% {
-    border-color: #7E1D40;
+    background-color: #FFCDBF;
   }
-  3.125% {
-    border-color: #883070;
+  2% {
+    background-color: #F78B83;
   }
-  6.25% {
-    border-color: #C8A2D7;
+  4% {
+    background-color: #D0202B;
   }
-  9.375% {
-    border-color: #6C849A;
+  6% {
+    background-color: #FFCF7A ;
   }
-  12.5% {
-    border-color: #556E83;
+  8% {
+    background-color: #F75D00;
   }
-  15.625% {
-    border-color: #173661;
+  10% {
+    background-color: #D26520;
   }
-  18.75% {
-    border-color: #00405F;
+  12% {
+    background-color: #AC492E;
   }
-  21.875% {
-    border-color: #003F75;
+  15% {
+    background-color: #FAECC5;
   }
-  25% {
-    border-color: #005EA0;
+  18% {
+    background-color: #FAE87F;
   }
-  28.125% {
-    border-color: #3A8BC3;
+  21% {
+    background-color: #F0D600;
   }
-  31.25% {
-    border-color: #0089CA;
+  24% {
+    background-color: #F6B300;
   }
-  34.375% {
-    border-color: #58A8E0;
+  27% {
+    background-color: #DEE24D;
   }
-  37.5% {
-    border-color: #80A6C3;
+  30% {
+    background-color: #79CCA6;
   }
-  40.625% {
-    border-color: #BADFEC;
+  33% {
+    background-color: #83C77F;
   }
-  43.75% {
-    border-color: #00483A;
+  36% {
+    background-color: #09BB83;
   }
-  46.875% {
-    border-color: #006C5B;
+  39% {
+    background-color: #00A46A;
   }
-  50% {
-    border-color: #00798B;
+  42% {
+    background-color: #00798B;
   }
-  53.125% {
-    border-color: #00A46A;
+  45% {
+    background-color: #006C5B;
   }
-  56.25% {
-    border-color: #09BB83;
+  48% {
+    background-color: #00483A;
   }
-  59.375% {
-    border-color: #83C77F;
+  51% {
+    background-color: #BADFEC;
   }
-  62.5% {
-    border-color: #79CCA6;
+  54% {
+    background-color: #80A6C3;
   }
-  65.625% {
-    border-color: #DEE24D;
+  57% {
+    background-color: #58A8E0;
   }
-  68.75% {
-    border-color: #F6B300;
+  60% {
+    background-color: #0089CA;
   }
-  71.875% {
-    border-color: #F0D600;
+  63% {
+    background-color: #3A8BC3;
+  }
+  66% {
+    background-color: #005EA0;
+  }
+  69% {
+    background-color: #003F75;
+  }
+  72% {
+    background-color: #00405F;
   }
   75% {
-    border-color: #FAE87F;
+    background-color: #173661;
   }
-  78.125% {
-    border-color: #FAECC5;
+  78% {
+    background-color: #556E83;
   }
-  81.25% {
-    border-color: #AC492E;
+  81% {
+    background-color: #6C849A;
   }
-  84.375% {
-    border-color: #D26520;
+  84% {
+    background-color: #C8A2D7;
   }
-  87.5% {
-    border-color: #F75D00;
+  87% {
+    background-color: #883070;
   }
-  90.625% {
-    border-color: #FFCF7A;
+  90% {
+    background-color: #7E1D40;
   }
-  93.75% {
-    border-color: #D0202B;
+  93% {
+    background-color: #645188;
   }
-  96.875% {
-    border-color: #F78B83;
+  96% {
+    background-color: #BBA68D;
+  }
+  99% {
+    background-color: #8D8275;
   }
   100% {
-    border-color: #FFCDBF;
+    background-color: #BE8D4A;
   }
+}
+
+.colorL {
+  animation: backgroundColorTransition 81s linear infinite;
 }
