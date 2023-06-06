@@ -22,21 +22,16 @@
 		</style>
 	</head>
 	<body>
-		<script src="../js/root_font_adj_color.js" type="text/javascript" charset="utf-8"></script>
-		<script>
-			window.onload = function() {
-
-			};
-		</script>
+		
 		<div class="background_color bg">
             <div class="navigatorLine">
                 <div class="colorFormatBlock">
                     <div class="colorFormats">
                         <p class="indivColorFormat">HEX</p>
                         <p class="indivColorFormat">RGB</p>
-                        <p class="indivColorFormat">CMYK</p>
+                        <!-- <p class="indivColorFormat">CMYK</p>
                         <p class="indivColorFormat">LAB</p>
-                        <p class="indivColorFormat">NCS</p>
+                        <p class="indivColorFormat">NCS</p> -->
                     </div>
                     <div class="purpose">测试图标前景和背景颜色组合是否符合<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank" class="black-link">WCAG 2.0 最小对比度</a>。</div>
                 </div>
@@ -45,14 +40,118 @@
                 </a>
             </div>
 
+			<div class="colorMainBlock">
+				<div class="sectionLeft">
+					<div class="colorSectionTitle">图片上传</div>
+					<div class="colorSectionInstruction">
+						选择图片文件
+						<input type="file" id="twoColorImg" accept="image/*">
+					</div>
+
+					<canvas id="canvas" class="mainPic"></canvas>
+
+
+				</div>
+				
+				<div class="midSepLine"></div>
+
+				<div class="sectionRight">
+					<div class="colorSectionTitle">颜色输入</div>
+					<div class="colorSectionInstruction">选择颜色</div>
+
+					<div class="pickingColorsContainer">
+						<div class="colorIllus" style="background-color: #ffffff; border: 0.01rem solid #000000;" id="illus_1">
+							<div class="colorIllus_circle" style="background-color: #000000;" id="circle_1"></div>
+
+						</div>
+
+						<div class="middleWrapper">
+							<div class="inputColorPicker">
+								<input type="color" id="c1_1" class="inputColorPicker_color">
+								<p id="c1_1_txt"></p>
+							</div>
+							
+							<div class="inputColorPicker">
+								<input type="color" id="c1_2" class="inputColorPicker_color">
+								<p id="c1_2_txt"></p>
+							</div>
+
+							<p id="c1_con" class="contrast_num"></p>
+							<p id="c1_con_note" class="contrast_note">对比度</p>
+						</div>
+					</div>
+
+					<div class="pickingColorsContainer">
+						<div class="colorIllus" style="background-color: #ffffff; border: 0.01rem solid #000000;" id="illus_2">
+							<div class="colorIllus_circle" style="background-color: #000000;" id="circle_2"></div>
+						</div>
+
+						<div class="middleWrapper">
+							<div class="inputColorPicker">
+								<input type="color" id="c2_1" class="inputColorPicker_color">
+								<p id="c2_1_txt"></p>
+							</div>
+							
+							<div class="inputColorPicker">
+								<input type="color" id="c2_2" class="inputColorPicker_color">
+								<p id="c2_2_txt"></p>
+							</div>
+
+							<p id="c2_con" class="contrast_num"></p>
+							<p id="c2_con_note" class="contrast_note">对比度</p>
+						</div>
+					</div>
+
+					<div class="pickingColorsContainer">
+						<div class="colorIllus" style="background-color: #ffffff; border: 0.01rem solid #000000;" id="illus_3">
+							<div class="colorIllus_circle" style="background-color: #000000;" id="circle_3"></div>
+						</div>
+
+						<div class="middleWrapper">
+							<div class="inputColorPicker">
+								<input type="color" id="c3_1" class="inputColorPicker_color">
+								<p id="c3_1_txt"></p>
+							</div>
+							
+							<div class="inputColorPicker">
+								<input type="color" id="c3_2" class="inputColorPicker_color">
+								<p id="c3_2_txt"></p>
+							</div>
+
+							<p id="c3_con" class="contrast_num"></p>
+							<p id="c3_con_note" class="contrast_note">对比度</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
 			
 
 			<div class="colorMenu">
-                <a href="" class="colorMenuItem">多色对比</a>
-                <a href="color_two.html" class="colorMenuItem">双色对比</a>
-                <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="colorMenuItem" target="_blank">关于WCAG2.0对比</a>            
+				<!-- <div class="pictureFormatter">
+					<div class="pictureFormatter_indiv">
+						<div class="pictureFormatter_indiv_inside pictureFormatter_indiv_insideBlack"></div>
+					</div>
+					<div class="pictureFormatter_indiv">
+						<img src="../img/canjiren.png" class="pictureFormatter_indiv_inside" alt="切换标识">
+					</div>
+					<div class="pictureFormatter_indiv">
+						<img src="../img/jinghao.png" class="pictureFormatter_indiv_inside" alt="显示数值">
+					</div>
+				</div> -->
+				<div>
+					<a href="" class="colorMenuItem">多色对比</a>
+                	<a href="color_two.html" class="colorMenuItem">双色对比</a>
+                	<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="colorMenuItem" target="_blank">关于WCAG2.0对比</a>       
+				</div>
+                     
             </div>
 		</div>
+
+
+		<script src="../js/root_font_adj_color.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/color_two.js" type="text/javascript" charset="utf-8"></script>
 		
 	</body>
 </html>

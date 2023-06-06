@@ -7,7 +7,7 @@
 	height: 4.13rem;
 	margin-top: 1.625rem;
 
-	margin-right: 3.5rem;
+	margin-right: 2.8645833333vw;
 }
 .logoImg{
 	width: 12.25rem;
@@ -26,7 +26,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-left: 6.25rem;
+	margin-left: 5.9375vw;
 }
 .colorFormats{
 	width: fit-content;
@@ -40,8 +40,12 @@
 .indivColorFormat{
 	font-size: 1.5rem;
 	margin-right: 4.25rem;
+	cursor: pointer;
 }
+.red-text {
+	color: red;
 
+}
 .purpose{
 	font-size: 2rem;
 }
@@ -54,7 +58,7 @@ a.black-link {
 	padding-bottom: 1.8125rem;
 	display: flex;
 	justify-content: flex-end;
-	align-items: flex-end;
+	align-items: center;
 	box-sizing: border-box;
 	position: relative;
 	z-index: 1000;
@@ -70,5 +74,50 @@ a.black-link {
 }
 .colorMenueItem_default{
 	font-weight: normal;
+}
+
+
+.colorMainBlock{
+	width: 100vw;
+	height: calc(100vh - 7.5rem - 7.5rem);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	box-sizing: border-box;
+	border-top:0.02rem solid #000000;
+	border-bottom: 0.02rem solid #000000;
+}
+
+.midSepLine{
+	width: 0.01rem;
+	height: 100%;
+	background-color: #000000;
+}
+
+.pictureFormatter{
+	width: fit-content;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 5.9375vw;
+}
+
+.pictureFormatter_indiv{
+	width: 1.6vw;
+	height: 1.6vw;
+	margin-right: 0.4vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	flex-shrink: 0;
+}
+.pictureFormatter_indiv_inside{
+	width: 1.2vw;
+	height: 1.2vw;
+}
+.pictureFormatter_indiv_insideBlack{
+	background-color: #000000;
+	border-radius: 50%;
 }
 

@@ -1,0 +1,146 @@
+.sectionLeft{
+    width: 56vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5.9375vw;
+    box-sizing: border-box;
+    height: 100%;
+}
+.sectionRight{
+    width: calc(100vw - 56vw);
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 4.6875vw;
+    box-sizing: border-box;
+}
+.colorSectionTitle{
+	font-size: 2.5rem;
+	font-weight: 700;
+	/* height: 0.5rem; */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.colorSectionInstruction{
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainPic{
+    width: 40vw;
+    height: 50vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pickingColorsContainer{
+    width: fit-content;
+    height: 8vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2.3125rem;
+
+}
+
+.colorIllus{
+    width: 8vw;
+    height: 8vw;
+    margin-right: 1.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorIllus_circle{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+.colorIllus_icon{
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.colorIllus_icon_project{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    right: 5vw;
+    border-left: 5vw solid transparent;
+    filter: drop-shadow(5vw 0vw);
+}
+
+.middleWrapper{
+    width: 18.066875rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.inputColorPicker{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.01rem solid #000000;
+    box-sizing: border-box;
+    margin-bottom: 0.815625rem;
+}
+.inputColorPicker_color{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.625rem;
+}
+.contrast_num{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0;
+
+}
+.contrast_note{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.colorIllus_num{
+    font-size: 2rem;      
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorIllus_img{
+    width: 5vw;
+    height: 5vw;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.colorIllus_img_logo{
+    width: 5vw;
+    height: 5vw;
+    flex-shrink: 0;
+    border-top: 5vw;
+    position: relative;
+    top: -5vw;
+    filter: drop-shadow(0 5vw #000000);
+}
