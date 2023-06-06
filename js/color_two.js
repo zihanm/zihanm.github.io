@@ -65,11 +65,11 @@ colorInput1_1.addEventListener('input', function() {
   const colorText = document.getElementById('c1_1_txt');
 	colorText.textContent = colorConverter(selectedFormat, colorValue);
  
-  const illus = document.getElementById('illus_1');
-  const circle = illus.querySelector('.colorIllus_circle');
+  const illus = document.getElementById('circle_1');
+  // const circle = illus.querySelector('.colorIllus_circle');
   // const num = illus.querySelector('.colorIllus_num');
   // const img = illus.querySelector('.colorIllus_img');
-  circle.style.backgroundColor = colorValue;
+  illus.style.backgroundColor = colorValue;
   // num.style.color = 'black';
   // img.style.filter = 'none';
 
@@ -89,8 +89,8 @@ colorInput1_2.addEventListener('input', function() {
 	colorText.textContent = colorConverter(selectedFormat, colorValue);
  
   const illus = document.getElementById('illus_1');
-  const circle = illus.querySelector('.colorIllus_circle');
-  circle.style.backgroundColor = colorValue;
+  // const circle = illus.querySelector('.colorIllus_circle');
+  illus.style.backgroundColor = colorValue;
 
   if (colorInput1_1.value) {
     const contrastRatio = calculateContrastRatio(colorInput1_1.value, colorValue);
@@ -136,9 +136,9 @@ colorInput2_1.addEventListener('input', function() {
   const colorText = document.getElementById('c2_1_txt');
 	colorText.textContent = colorConverter(selectedFormat, colorValue);
  
-  const illus = document.getElementById('illus_2');
-  const circle = illus.querySelector('.colorIllus_circle');
-  circle.style.backgroundColor = colorValue;
+  const illus = document.getElementById('circle_2');
+  // const circle = illus.querySelector('.colorIllus_circle');
+  illus.style.backgroundColor = colorValue;
 
 
   if (colorInput2_2.value) {
@@ -156,8 +156,8 @@ colorInput2_2.addEventListener('input', function() {
 	colorText.textContent = colorConverter(selectedFormat, colorValue);
  
   const illus = document.getElementById('illus_2');
-  const circle = illus.querySelector('.colorIllus_circle');
-  circle.style.backgroundColor = colorValue;
+  // const circle = illus.querySelector('.colorIllus_circle');
+  illus.style.backgroundColor = colorValue;
 
   if (colorInput2_1.value) {
     const contrastRatio = calculateContrastRatio(colorValue, colorInput2_1.value);
@@ -174,9 +174,9 @@ colorInput3_1.addEventListener('input', function() {
   const colorText = document.getElementById('c3_1_txt');
 	colorText.textContent = colorConverter(selectedFormat, colorValue);
  
-  const illus = document.getElementById('illus_3');
-  const circle = illus.querySelector('.colorIllus_circle');
-  circle.style.backgroundColor = colorValue;
+  const illus = document.getElementById('circle_3');
+  // const circle = illus.querySelector('.colorIllus_circle');
+  illus.style.backgroundColor = colorValue;
 
   if (colorInput3_2.value) {
     const contrastRatio = calculateContrastRatio(colorValue, colorInput3_2.value);
@@ -194,8 +194,8 @@ colorInput3_2.addEventListener('input', function() {
 	colorText.textContent = colorConverter(selectedFormat, colorValue);
  
   const illus = document.getElementById('illus_3');
-  const circle = illus.querySelector('.colorIllus_circle');
-  circle.style.backgroundColor = colorValue;
+  // const circle = illus.querySelector('.colorIllus_circle');
+  illus.style.backgroundColor = colorValue;
 
   if (colorInput3_1.value) {
     const contrastRatio = calculateContrastRatio(colorValue, colorInput3_1.value);
