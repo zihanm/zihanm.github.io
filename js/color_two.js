@@ -169,8 +169,9 @@ colorInput2_2.addEventListener('input', function() {
 
 
 const colorInput3_1 = document.getElementById('c3_1');
+const colorInput3_2 = document.getElementById('c3_2');
 colorInput3_1.addEventListener('input', function() {
-  const colorValue = colorInput1_1.value;
+  const colorValue = colorInput3_1.value;
   const colorText = document.getElementById('c3_1_txt');
 	colorText.textContent = colorConverter(selectedFormat, colorValue);
  
@@ -187,7 +188,6 @@ colorInput3_1.addEventListener('input', function() {
 	
 });
 
-const colorInput3_2 = document.getElementById('c3_2');
 colorInput3_2.addEventListener('input', function() {
   const colorValue = colorInput3_2.value;
   const colorText = document.getElementById('c3_2_txt');
