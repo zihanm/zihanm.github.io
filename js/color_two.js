@@ -105,22 +105,39 @@ function calculateContrastRatio(color1, color2) {
   const rgb1 = hexToRgb(color1);
   const rgb2 = hexToRgb(color2);
 
+  console.log('two colors are:', color1, color2)
+  console.log('converted to rgb are:', rgb1, rgb2)
+
   // Calculate luminance values
   const lum1 = calculateLuminance(rgb1);
   const lum2 = calculateLuminance(rgb2);
+  console.log(lum1, lum2)
 
   // Calculate contrast ratio
-  const ratio = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+  const ratio = (Math.max((lum1 + 0.05), (lum2 + 0.05))) / (Math.min((lum1 + 0.05), (lum2 + 0.05)));
 
   return ratio.toFixed(2);
 }
 
-function calculateLuminance(rgb) {
-  const r = parseInt(rgb.substring(4, rgb.indexOf(','))) / 255;
-  const g = parseInt(rgb.substring(rgb.indexOf(',')+2, rgb.lastIndexOf(','))) / 255;
-  const b = parseInt(rgb.substring(rgb.lastIndexOf(',')+2, rgb.length-1)) / 255;
+function rgbAdj(c){
+	var cRatio = c
+	if(cRatio <= 0.03928){
+		return cRatio / 12.92
+	}else{
+		return Math.pow((cRatio+0.055)/1.055, 2.4)
+	}
+}
 
-  const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+// 0.2126 * rgbAdj(color_rgb[0]) + 0.7152 * rgbAdj(color_rgb[1]) + 0.0722 * rgbAdj(color_rgb[2])
+function calculateLuminance(rgb) {
+  var r = parseInt(rgb.substring(4, rgb.indexOf(','))) / 255;
+  var g = parseInt(rgb.substring(rgb.indexOf(',')+2, rgb.lastIndexOf(','))) / 255;
+  var b = parseInt(rgb.substring(rgb.lastIndexOf(',')+2, rgb.length-1)) / 255;
+  console.log('calculating luminance')
+  
+
+  console.log(r, g, b)
+  var lum = 0.2126 * rgbAdj(r) + 0.7152 * rgbAdj(g) + 0.0722 *  rgbAdj(b);
 
   return lum;
 }
@@ -448,29 +465,6 @@ function colorConverter(selectedFormat, colorValue) {
   }
 
   return finalColor;
-}
-
-
-function rgbAdj(c){
-	var cRatio = c / 255
-	if(cRatio <= 0.03928){
-		return cRatio / 12.92
-	}else{
-		return Math.pow((cRatio+0.055)/1.055, 2.4)
-	}
-}
-
-function getLightness(color_rgb){
-	return 0.2126 * rgbAdj(color_rgb[0]) + 0.7152 * rgbAdj(color_rgb[1]) + 0.0722 * rgbAdj(color_rgb[2])
-}
-
-function calcContrast(color1, color2){
-  var l1 = getLightness(color1)
-	var l2 = getLightness(color2)
-  // Calculate the color contrast
-	var contrast = (Math.max((l1 + 0.05), (l2 + 0.05))) / (Math.min((l1 + 0.05), (l2 + 0.05)));
-  // Display the results
-  return contrast.toFixed(2);
 }
 
  
