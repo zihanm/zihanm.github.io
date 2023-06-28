@@ -1,17 +1,17 @@
 .background_color{
-	background: #F5F5F5;
+	background: #f5f1e8;
 }
 
 .logo{
 	width: 12.25rem;
-	height: 4.13rem;
+	height: 3.8125rem;
 	margin-top: 1.625rem;
 
-	margin-right: 2.8645833333vw;
+	margin-right: 3.44rem;
 }
 .logoImg{
 	width: 12.25rem;
-	height: 4.13rem;
+	height: 3.8125rem;
 }
 .navigatorLine{
     height: 7.5rem;
@@ -26,7 +26,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-left: 5.9375vw;
+	margin-left: 6.94rem;
 }
 .colorFormats{
 	width: fit-content;
@@ -41,10 +41,10 @@
 	font-size: 1.5rem;
 	margin-right: 4.25rem;
 	cursor: pointer;
+	font-weight: 200;
 }
 .red-text {
 	color: red;
-
 }
 .purpose{
 	font-size: 2rem;
@@ -62,12 +62,15 @@ a.black-link {
 	box-sizing: border-box;
 	position: relative;
 	z-index: 1000;
+	box-sizing: border-box;
 }
 .colorMenuItem{
 	font-size: 1.5rem;
-	color: #000000;
 	margin-right: 2.25rem;
 	text-decoration: none;
+}
+.black_text{
+	color: #000000;
 }
 .colorMenueItem_select{
 	font-weight: bold;
@@ -120,4 +123,3 @@ a.black-link {
 	background-color: #000000;
 	border-radius: 50%;
 }
-

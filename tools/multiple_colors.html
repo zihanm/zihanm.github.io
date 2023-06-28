@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>多色对比</title>
+		<style type="text/css">
+			@import url('color_common.css');
+            @import url('multiple_colors.css');
+			
+			.bg{
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				flex-shrink: 0;
+				overflow: hidden;
+                flex-shrink: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="background_color bg">
+            <div class="navigatorLine">
+                <div class="colorFormatBlock">
+                    
+                </div>
+                <a href="color_landing.html"  class="logo">
+                    <img src="../img/color_logo.png" class="logoImg">
+                </a>
+            </div>
+
+            <div class="dataBoard">
+                <div class="circleContainerL">
+                    <div class="resetAndLock">
+                        <img src="../img/color_refresh.png" class="resetAndLock_icon" alt="">
+                        <div class="resetAndLock_midline"></div>
+                        <img src="../img/color_lock.png" class="resetAndLock_icon" alt="">
+                    </div>
+                </div>
+
+                <div class="dataBoard_topBtm">
+                    <div class="dataBoard_topBtm_align">
+                        <div class="dataBoard_topBtm_title dataBoard_topBtm_sideSection">SIGN</div>
+                        <div class="dataBoard_topBtm_title dataBoard_topBtm_midSection">CONTRAST</div>
+                        <div class="dataBoard_topBtm_title dataBoard_topBtm_sideSection">BACKGROUND</div>
+                    </div>
+
+                    <div class="resetAndLock_midline"></div>
+                    
+                    <div class="dataBoard_topBtm_align">
+                        <div class="dataBoard_topBtm_data dataBoard_topBtm_sideSection" id="signColor">RGB(255,255,255)</div>
+                        <div class="dataBoard_topBtm_dataMid dataBoard_topBtm_midSection" id="contrastNum">4.2</div>
+                        <div class="dataBoard_topBtm_data dataBoard_topBtm_sideSection" id="bgColor">RGB(255,255,255)</div>
+                    </div>
+
+                </div>
+
+                <div class="circleContainerR">
+                    <div class="resetAndLock">
+                        <img src="../img/color_refresh.png" class="resetAndLock_icon" alt="">
+                        <div class="resetAndLock_midline"></div>
+                        <img src="../img/color_lock.png" class="resetAndLock_icon" alt="">
+                    </div>
+                </div>
+            </div>
+
+			<div class="centerContent">
+				<div class="colorChoices">
+					<!-- <div class="colorChoicesBlock"></div> -->
+				</div>
+
+				<div class="footNoteContainer">
+					<div class="footNoteContainer_colors">
+						<div class="footNoteContainer_colorBg1"></div>
+						<div class="footNoteContainer_colorBg2"></div>
+						<div class="footNoteContainer_colorBg3"></div>
+					</div>
+
+					<div class="footNoteContainer_notesContainer">
+						<div class="footNoteContainer_notesContainer_notesTwoWrappers">
+
+						</div>
+						<div class="footNoteContainer_notesContainer_circle"></div>
+					</div>
+
+				</div>
+
+			</div>
+			
+
+
+			<div class="colorMenu">
+				<!-- <div class="pictureFormatter">
+					<div class="pictureFormatter_indiv">
+						<div class="pictureFormatter_indiv_inside pictureFormatter_indiv_insideBlack"></div>
+					</div>
+					<div class="pictureFormatter_indiv">
+						<img src="../img/canjiren.png" class="pictureFormatter_indiv_inside" alt="切换标识">
+					</div>
+					<div class="pictureFormatter_indiv">
+						<img src="../img/jinghao.png" class="pictureFormatter_indiv_inside" alt="显示数值">
+					</div>
+				</div> -->
+				<div>
+					<a href="color_two.html" class="colorMenuItem">多色对比</a>
+                	<a href="color_two.html" class="colorMenuItem">双色对比</a>
+                	<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="colorMenuItem" target="_blank">关于WCAG2.0对比</a>       
+				</div>
+                     
+            </div>
+		</div>
+
+
+		<script src="../js/root_font_adj_color.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/multiple_colors.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

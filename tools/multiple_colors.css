@@ -1,0 +1,251 @@
+/* 看板 开始 */
+.dataBoard{
+    width: 100vw;
+    height: 11.5rem;
+    box-sizing: border-box;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circleContainerL{
+    width: 11.5rem;
+    height: 11.5rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.circleContainerR{
+    width: 11.5rem;
+    height: 11.5rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.resetAndLock{
+    width: calc(11.5rem / 2);
+    height: 11.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+.resetAndLock_midline{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+.resetAndLock_icon{
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.dataBoard_topBtm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 11.5rem;
+    width: calc(100% - 11.5rem - 11.5rem);
+}
+.dataBoard_topBtm_align{
+    height: calc(11.5rem / 2 - 0.5px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dataBoard_topBtm_title{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color:#000000;
+}
+.dataBoard_topBtm_data{
+    font-size: 2.5rem;
+}
+.dataBoard_topBtm_sideSection{
+    width: calc(50% - 17.375rem / 2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataBoard_topBtm_midSection{
+    width: 17.375rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    box-sizing: border-box;
+}
+.dataBoard_topBtm_dataMid{
+    font-size: 6rem;
+}
+
+/* 看板 结束 */
+
+.centerContent{
+    width: 100vw;
+	height: calc(100vh - 7.5rem - 7.5rem - 3.06rem - 3.06rem - 11.5rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;  
+}
+
+.colorChoices{
+	width: calc(100vw - 11.5rem - 11.5rem);
+    height: fit-content;
+	/* height: calc(100vh - 7.5rem - 7.5rem - 3.06rem - 3.06rem - 11.5rem); */
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+    flex-wrap: wrap;
+  
+}
+
+
+.colorChoicesBlock{
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 1.56rem;
+}
+
+
+/* 脚注 开始 */
+.footNoteContainer{
+    width: 100vw;
+    height: 22.5675rem;
+    background: #DBEDED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.footNoteContainer_colors{
+    width: 100vw;
+    height: 22.5675rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+.footNoteContainer_colorBg1{
+    width: 51.625rem;
+    height: 51.625rem;
+    flex-shrink: 0;
+    border-radius: 826px;
+    background: #4F857C;
+    filter: blur(100px);
+    border-radius: 50%;
+    position: relative;
+    right: 1.44rem;
+}
+.footNoteContainer_colorBg2{
+    width: 51.625rem;
+    height: 51.625rem;
+    flex-shrink: 0;
+    border-radius: 826px;
+    background: #73D394;
+    filter: blur(100px);
+    border-radius: 50%;
+    position: relative;
+    top: calc(8.19rem + 51.625rem / 2);
+    right: calc(51.625rem / 2);
+}
+.footNoteContainer_colorBg3{
+    width: 35.75rem;
+    height: 35.75rem;
+    flex-shrink: 0;
+    border-radius: 572px;
+    background: #F90;
+    filter: blur(100px);
+    border-radius: 50%;
+    position: relative;
+    right: 12rem;
+    top: calc(35.75rem - 22.5675rem);
+}
+
+.footNoteContainer_notesContainer{
+    width: 100vw;
+    height: 19.1875rem;
+    margin-top: calc(22.5675rem / 2 - 19.1875rem / 2);
+    margin-bottom: calc(22.5675rem / 2 - 19.1875rem / 2);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    bottom: 22.5675rem;
+    z-index: 2;
+    flex-shrink: 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.footNoteContainer_notesContainer_notesTwoWrappers{
+    width: calc(100vw - 19.1875rem / 2 - 11.44rem - 2rem);
+    height: 19.1875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1.25rem;
+    box-sizing: border-box;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin-left: 11.44rem;
+    flex-shrink: 0;
+}
+
+.footNoteContainer_notesContainer_circle{
+    width: 19.1875rem;
+    height: 19.1875rem;
+    flex-shrink: 0;
+    position: relative;
+    right: calc(19.1875rem / 2);
+    /* right: 2rem; */
+
+    box-sizing: border-box;
+    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
+    border-right: 1px solid #000;
+    border-radius: 50%;
+    z-index: 1;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+/* 脚注 结束 */

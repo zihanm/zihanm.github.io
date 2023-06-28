@@ -1,73 +1,114 @@
 <!DOCTYPE html>
-<html class="placeAtMiddle">
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<title>图像颜色识别</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>双色对比</title>
 		<style type="text/css">
-			@import url("../css/index.css");
-			@import url("../css/public_style.css");
 			@import url("../css/color.css");
+			@import url("color_common.css");
+
+			.bg{
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				flex-shrink: 0;
+				overflow: hidden;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="body_container">
-			<!-- <div class="topLine_btm_padding">
-				
-			</div> -->
-			<div class="note">色彩对比度计算器</div>
-			<div class="color_body_container">
-				<div class="function_column">
-					<form class="upload_pic">
-					  <label for="file">选择一张图片:</label>
-					  <input type="file" id="file" accept="image/*">
-					  <!-- 
-					  <label for="color" class='input_label'>选择一个颜色</label>
-					  <input type="color" id="color"> -->
-					</form>
-					<canvas id="canvas" class="image_preview"></canvas>
-					<div id="result" class="color_res"></div>
+		<div class="background_color bg">
+			<div class="navigatorLine">
+                <div class="colorFormatBlock">
+                    <div class="colorFormats">
+                        <p class="indivColorFormat">HEX</p>
+                        <p class="indivColorFormat red-text">RGB</p>
+                        <!-- <p class="indivColorFormat">CMYK</p>
+                        <p class="indivColorFormat">LAB</p>
+                        <p class="indivColorFormat">NCS</p> -->
+                    </div>
+                    <div class="purpose">测试背景和图标前景颜色组合是否符合<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank" class="black-link">WCAG 2.0 最小对比度</a>。</div>
+                </div>
+                <a href="color_landing.html"  class="logo">
+                    <img src="../img/color_logo.png" class="logoImg">
+                </a>
+            </div>
+
+			<div class="colorMainBlock_2">
+				<div class="sectionLeft">
+					<div class="colorSectionTitle">图片上传</div>
+					<div class="colorSectionInstruction">
+						选择图片文件
+						<input type="file" id="file" accept="image/*">
+					</div>
+					
+					
+					<div class="imageAndRes">
+						<canvas id="canvas" class="image_preview"></canvas>
+						<div class="color_res">
+							<div class="oneLine">对比度<p id="checkPoint1"></p></div>
+							<div class="contrastNum" id="contrastNum">-</div>
+							<div id="result"></div>
+						</div>
+					</div>
+					
 				</div>
-				<div class="function_column">
-					<form class="numeric_calc">
-						<label for="c1">选择或输入第一个颜色:</label>
-						<input type="color" id="c1">
-						
-						<label for="c2">选择或输入第二个颜色:</label>
-						<input type="color" id="c2">
-						
-						<div class="cal_btn" onclick="numeric_calc()">计算</div>
-						<div id="numeric_calc_res" class="numeric_calc_res"></div>
-						
-					</form>
+				<div class="midSepLine"></div>
+				<div class="sectionRight">
+					<div class="colorSectionTitle">颜色输入</div>
+					<div class="colorSectionInstruction">
+						选择颜色
+					</div>
+
+					<div class="imageAndRes">
+						<div id="imgContainer" class="imgContainer">
+							<img src="../img/canjiren.png" class="imgContainer_img" alt="">
+						</div>
+						<div class="color_res">
+							<div class="oneLine">对比度<p id="checkPoint2"></p></div>
+							<div id="contrastNum_icon" class="contrastNum">-</div>
+
+							<div class="colorLineRightSection">
+								<input type="color" id="c1" class='color_inputRightSection'>
+								<div id="c1_txt">RGB(0, 0, 0)</div>
+							</div>
+							<div class="colorLineRightSection">
+								<input type="color" id="c2" class='color_inputRightSection'>
+								<div id="c2_txt">RGB(0, 0, 0)</div>
+							</div>
+						</div>
+					</div>
+					
+					
 				</div>
 			</div>
-			
-			
-			
-			
-			<!-- <div class="contact_me">
-				<img src="img/email_icon.svg" class="contact_me_icon">zihanmcn@126.com&nbsp;&nbsp;(OPEN FOR FREELANCING)
-			</div> -->
+			<div class="passOrNot">
+				<div class="passOrNot_txt">未通过（contrast ＜ 3）</div>
+				<div class="passOrNot_sepLine"></div>
+
+				<div class="passOrNot_txt">通过，限大文本（contrast ≥ 3）</div>
+				<div class="passOrNot_sepLine"></div>
+
+				<div class="passOrNot_txt">通过，AA,文本最低标准（contrast ≥ 4.5）</div>
+				<div class="passOrNot_sepLine"></div>
+
+				<div class="passOrNot_txt">通过，AAA（contrast ≥ 7）</div>
+			</div>
+			<div class="colorMenu">
+				<div>
+					<a href="color_two.html" class="colorMenuItem black_text">多色对比</a>
+                	<a href="color.html" class="colorMenuItem red-text">双色对比</a>
+                	<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="colorMenuItem black_text" target="_blank">关于WCAG2.0对比</a>       
+				</div>
+            </div>
 		</div>
 		<!-- <script src="../node_modules/colorthief/dist/color-thief.umd.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-
-		<script src="../js/root_font_adj.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/root_font_adj_color.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/color_contrast_calculator.js"></script>
-		<script type="text/javascript">
-			// const colorThief = new ColorThief();
-			//     const img = document.querySelector('img');
-			
-			//     // Make sure image is finished loading
-			//     if (img.complete) {
-			//       colorThief.getColor(img);
-			//     } else {
-			//       image.addEventListener('load', function() {
-			//         colorThief.getColor(img);
-			//       });
-			//     }
-			
-		</script>
 		
 	</body>
 </html>

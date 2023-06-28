@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open color_two.html",
-            "file": "/Users/meizihan/Desktop/zihanm.github.io/tools/color_two.html"
+            "file": "/Users/meizihan/Desktop/zihanm.github.io/tools/color.html"
         }
     ]
 }

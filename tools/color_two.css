@@ -114,6 +114,11 @@
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0;
+    display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: fit-content;
+	height: 2.25rem;
 }
 
 
@@ -144,3 +149,4 @@
     top: -5vw;
     filter: drop-shadow(0 5vw #000000);
 }
+

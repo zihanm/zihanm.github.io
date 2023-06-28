@@ -80,6 +80,8 @@ colorInput1_1.addEventListener('input', function() {
     
     const contrastRatioDiv = document.getElementById('c1_con');
     contrastRatioDiv.textContent = `${contrastRatio}`;
+    document.getElementById('checkPoint1').innerHTML = checkPass(contrastRatio)
+
   }
 });
 
@@ -97,6 +99,8 @@ colorInput1_2.addEventListener('input', function() {
    
     const contrastRatioDiv = document.getElementById('c1_con');
     contrastRatioDiv.textContent = `${contrastRatio}`;
+    document.getElementById('checkPoint1').innerHTML = checkPass(contrastRatio)
+
   }
 });
 
@@ -163,6 +167,8 @@ colorInput2_1.addEventListener('input', function() {
     
     const contrastRatioDiv = document.getElementById('c2_con');
     contrastRatioDiv.textContent = `${contrastRatio}`;
+    document.getElementById('checkPoint2').innerHTML = checkPass(contrastRatio)
+
   }
 	
 });
@@ -181,6 +187,7 @@ colorInput2_2.addEventListener('input', function() {
     
     const contrastRatioDiv = document.getElementById('c2_con');
     contrastRatioDiv.textContent = `${contrastRatio}`;
+    document.getElementById('checkPoint2').innerHTML = checkPass(contrastRatio)
   }
 });
 
@@ -201,6 +208,7 @@ colorInput3_1.addEventListener('input', function() {
     
     const contrastRatioDiv = document.getElementById('c3_con');
     contrastRatioDiv.textContent = `${contrastRatio}`;
+    document.getElementById('checkPoint3').innerHTML = checkPass(contrastRatio)
   }
 	
 });
@@ -219,6 +227,7 @@ colorInput3_2.addEventListener('input', function() {
     
     const contrastRatioDiv = document.getElementById('c3_con');
     contrastRatioDiv.textContent = `${contrastRatio}`;
+    document.getElementById('checkPoint3').innerHTML = checkPass(contrastRatio)
   }
 });
 
@@ -499,3 +508,15 @@ jinghaoImg.addEventListener('click', () => {
   circle1.classList.add('state3');
 });
 
+
+function checkPass(num) {
+  if (num < 3) {
+    return '：未通过';
+  }else if(num >= 3 && num < 4.5){
+    return '：通过';
+  } else if(num >= 4.5 && num < 7){
+    return '：通过, AA';
+  } else {
+    return '：通过, AAA';
+  }
+}
