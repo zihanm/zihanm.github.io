@@ -15,40 +15,60 @@
 			function book_show(){
 				const book_list = [
 					{
-						name:'《首席产品管1:从新手到行家》',
+						name:'首席产品管1:从新手到行家',
 						note_pic_url_blur:'img/books/PM1_blur.png',
 						bookid:1,
-						isbn:'978-7-111-60657-4'
+						isbn:'978-7-111-60657-4',
+						href:''
 					},
 					{
-						name:'《人工智能与医疗》',
+						name:'人工智能与医疗',
 						note_pic_url_blur:'img/books/AI_med_blur.png',
 						bookid:2,
-						isbn:'978-7-301-30566-9'
+						isbn:'978-7-301-30566-9',
+						href:''
 					},
 					{
-						name:'《元宇宙》',
+						name:'元宇宙',
 						note_pic_url_blur:'img/books/metaverse_blur.png',
 						bookid:3,
-						isbn:'978-7-5001-6691-7'
+						isbn:'978-7-5001-6691-7',
+						href:''
 					},
 					{
-						name:'《人工智能产品经理》',
+						name:'人工智能产品经理',
 						note_pic_url_blur:'img/books/AI_PM_bot_blur.png',
 						bookid:4,
-						isbn:'978-7-121-34771-9'
+						isbn:'978-7-121-34771-9',
+						href:''
 					},
 					{
-						name:'《意念力：激发你的潜在力量》',
+						name:'意念力：激发你的潜在力量',
 						note_pic_url_blur:'img/books/willpower_blur.png',
 						bookid:5,
-						isbn:'978-7-5074-2505-5'
+						isbn:'978-7-5074-2505-5',
+						href:''
 					},
 					{
-						name:'《逆商：我们改如何应对坏时间》',
+						name:'逆商：我们改如何应对坏时间',
 						note_pic_url_blur:'img/books/anti_diff_blur.png',
 						bookid:6,
-						isbn:'978-7-300-26541-4'
+						isbn:'978-7-300-26541-4',
+						href:''
+					},
+					{
+						name:'PROMPT ENGINEERING',
+						note_pic_url_blur:'img/books/prompt_engineering.png',
+						bookid:7,
+						isbn:'9781234567890',
+						href:'img/books/prompt engineering 05ebb8ed149d49ac85d2caabdb35c035.html'
+					},
+					{
+						name:'ELON MUSK',
+						note_pic_url_blur:'img/books/elon musk.jpeg',
+						bookid:8,
+						isbn:'9780753557525',
+						href:'img/books/Elon Musk 8cb49930e80d418eb3b08d1fbd18788b.html'
 					}
 				]
 				var html_book = []
@@ -59,7 +79,14 @@
 						html_text += '<img src="' + book_list[book].note_pic_url_blur + '" class="book_indiv_icon" id=' +  book_list[book].bookid.toString() +'></img>'
 						// html_text += '</a>'
 						html_text += '<div class="book_indiv_name">' + 'ISBN&nbsp;' + book_list[book].isbn + '</div>'
-						html_text += '<div class="book_indiv_name">' + book_list[book].name + '</div>'
+
+						if(book_list[book].href != ''){
+							html_text += '<a target="_blank" class="book_indiv_name" style="text-decoration: underline;" href="' + book_list[book].href  + '">' + book_list[book].name + '</a>'
+
+						}else{
+							html_text += '<div class="book_indiv_name">' + book_list[book].name + '</div>'
+						}
+
 					html_text += '</div>'
 					html_book.push(html_text)
 				}
@@ -86,6 +113,7 @@
 					<a href="book_notes.html" class="menu menu_selected">读书笔记</a>
 					<!-- <a href="industry.html" class="menu menu_not_selected">行业随想</a> -->
 					<a href="study.html" class="menu menu_not_selected">各种学习</a>
+					<a href="tools/color_landing.html" class="menu menu_not_selected" target="_blank">标识颜色设计工具</a>
 				</div>
 			</div>
 			<div class="topLine_btm_padding">
