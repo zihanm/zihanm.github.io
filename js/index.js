@@ -144,6 +144,23 @@ function show_career(){
 			date:'(11/2022 - 至今)',
 			projects:[
 				{
+					project_name:'制剂项目&nbsp;|&nbsp;新客户开发+项目管理',
+					project_discription:[
+						{
+							'项目背景':'推进司美格鲁肽在全球非专利地区的仿制药片剂生产'
+						},
+						{
+							'项目目标':'协助供应商找到有生产和销售能力的制剂生产商'
+						},
+						{
+							'个人行动':'品牌和项目包装、领英与独立站推广；项目管理，重点放在了相关方期望的管理中；目前正在推进一个涉及5个相关方的合作中'
+						},
+						{
+							'项目结果':'正在进行中'
+						}
+					]
+				},
+				{
 					project_name:'公司线上系统搭建&nbsp;|&nbsp;AI+全栈',
 					project_discription:[
 						{
@@ -430,7 +447,7 @@ function show_skills(){
 		},
 		{
 			'其他OTHERS':[
-				'Prism','LaTeX','Audition','Photoshop','NPDP（正在自学备考）'
+				'PMP','Prism','LaTeX','Audition','Photoshop'
 			]
 		}
 	]
