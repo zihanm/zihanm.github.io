@@ -1,0 +1,236 @@
+.section_title{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 1rem;
+	margin-top: 1.5rem;
+}
+.section_title_top{
+	color: #ffd200;
+	line-height: 1rem;
+	letter-spacing: 0rem;
+	font-size: 1.8rem;
+	font-weight: normal;
+}
+.section_title_btm{
+	margin-top: 0.3rem;
+	font-size: 1rem;
+	font-weight: normal;
+	letter-spacing: 0rem;
+	color: #565348;
+}
+
+.info_container{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.date_column{
+	width: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.date_box{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 0.3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	overflow: hidden;
+	margin-top: 2rem;
+}
+.date_box_top{
+	width: 100%;
+	height: 2.5rem;
+	background-color: #ffd200;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Georgia-Bold;
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #18150d;
+}
+.date_box_btm{
+	width: 100%;
+	height: 1.5rem;
+	background-color: #504c41;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Aller-Bold;
+	font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #ffffff;
+}
+
+.main{
+	background-color: #FFFFFF;
+	width: 100%;
+	border-radius: 0.3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.place_name{
+	font-size: 1.2rem;
+	color: #504c41;
+	margin-left: 1rem;
+	margin-bottom: 0.8rem;
+}
+
+.main_tag{
+	width: fit-content;
+	height: 2.2rem;
+	border-top-right-radius: 1.1rem;
+	border-bottom-right-radius: 1.1rem;
+	background-color: #504c41;
+	color: #ffd200;
+	font-size: 0.9rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 0.8rem;
+	padding-right: 1.2rem;
+	margin-bottom: 0.5rem;
+	box-shadow: 0.1rem 0.1rem 0.1rem #cecece;
+}
+
+.main_year_tag{
+	color: #666666;
+	font-size: 0.9rem;
+	margin-left: 0.8rem;
+	margin-bottom: 0.5rem;
+}
+.main_year_course_container{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+}
+.main_year_course{
+	width: fit-content;
+	height: 1.4rem;
+	border-radius: 0.7rem;
+	background-color: #FFD200;
+	color: #565348;
+	font-size: 0.9rem;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.8rem;
+	margin-top: 0.5rem;
+}
+.main_year_course:hover{
+	animation: main_year_course_animation 2s;
+}
+@keyframes main_year_course_animation{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.main_subsection_title{
+	width: fit-content;
+	padding-left: 0.8rem;
+	font-size: 1.2rem;
+	color: #565348;
+	font-weight: bolder;
+	margin-top: 0.8rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.main_project_container{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.main_project_name{
+	width: fit-content;
+	margin-left: 1rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0.4rem;
+	font-size: 1rem;
+	color: #504c41;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-weight: bolder;
+}
+.main_project_discription_container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-size: 1rem;
+	color: #504c41;
+	font-weight: normal;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	box-sizing: border-box;
+}
+.main_project_discription_line{
+	width: inherit;
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 0.3rem;
+}
+.main_project_discription_line_bullet{
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: #504c41;
+	border-radius: 50%;
+	margin-right: 1rem;
+	margin-top: 0.3rem;
+}
+.main_project_discription_line_tag{
+	width: 5rem;
+	color: #504c41;
+	font-weight: bolder;
+}
+.main_project_discription_line_text{
+	width: calc(100% - 5rem);
+	white-space: pre-wrap;
+}
+
+/* Remove desktop-only navigation elements */
+.breif_section_list,
+.list_item,
+.list_item:hover,
+.list_item_current,
+.list_item_current::before,
+.list_item_other,
+.list_sep_line {
+	display: none;
+}

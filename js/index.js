@@ -1,4 +1,5 @@
 function show_education(){
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	var edu_list = [
 		{
 			uni:'剑桥大学｜University of Cambridge',
@@ -70,10 +71,14 @@ function show_education(){
 	
 	for(let edu in edu_list){
 		html_edu.push('<div class="info_container">')
-		// console.log(edu_list[edu])
 		var html_text = ''
-		html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + edu_list[edu].date_tag[0] + '</div><div class="date_box_btm">' + edu_list[edu].date_tag[1] + '</div></div></div>'
-			html_text += '<div class="main">'
+		
+		// Only show date_tag div if not on mobile
+		if (!isMobile) {
+			html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + edu_list[edu].date_tag[0] + '</div><div class="date_box_btm">' + edu_list[edu].date_tag[1] + '</div></div></div>'
+		}
+		
+		html_text += '<div class="main">'
 				
 				html_text += '<div class="place_name">'
 				html_text += edu_list[edu].uni
@@ -136,6 +141,7 @@ function show_education(){
 
 
 function show_career(){
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	var career_list = [
 		{
 			company:'宁波优贝徳进出口有限公司｜Unibest',
@@ -173,7 +179,7 @@ function show_career(){
 							'个人行动':'收集并梳理需求后，运用AI，做了全栈开发'
 						},
 						{
-							'项目结果':'在同时有其它工作的背景下，先后各花费了：<br> 1. <b>约半个月</b>上线了单证部门文件审批系统（配合审计需求，详细记录文件审批的错误和操作记录）;<br> 2. <b>约半个月</b>上线展会小程序，旨在辅助业务员在线下参加展会时，能够及时查看公司ERP系统的供应商信息、快速了解某药物的FDA审批及药理信息，并为公司一站式服务工具箱，提供了打标签的信息录入渠道；<br> 3. <b>约一周</b>将展会小程序中的橙皮书查询及工具箱功能移至线上系统，以便于业务部门在日常工作时于企业微信端操作；<br> 4. <b>约两周</b>，上线了一个新员工培训系统，其中部分素材，迎合公司对外开放的ESG原则，作为“优贝徳商学院”公开给社会群众(现已下线)。系统本身包括PC和移动端能够访问的学习平台，根据各部门的要求展示必学内容；一个后台管理页面，包括HR和领导称可access的可视化看板，HR操作的课程素材管理和新员工学习情况进度跟进等'
+							'项目结果':'在同时有其它工作的背景下，先后各花费了：<br> 1. <b>约半个月</b>上线了单证部门文件审批系统（配合审计需求，详细记录文件审批的错误和操作记录）;<br> 2. <b>约半个月</b>上线展会小程序，旨在辅助业务员在线下参加展会时，能够及时查看公司ERP系统的供应商信息、快速了解某药物的FDA审批及药理信息，并为公司一站式服务工具箱，提供了打标签的信息录入渠道；<br> 3. <b>约一周</b>将展会小程序中的橙皮书查询及工具箱功能移至线上系统，以便于业务部门在日常工作时于企业微信端操作；<br> 4. <b>约两周</b>，上线了一个新员工培训系统，其中部分素材，迎合公司对外开放的ESG原则，作为"优贝徳商学院"公开给社会群众(现已下线)。系统本身包括PC和移动端能够访问的学习平台，根据各部门的要求展示必学内容；一个后台管理页面，包括HR和领导称可access的可视化看板，HR操作的课程素材管理和新员工学习情况进度跟进等'
 						}
 					]
 				},
@@ -224,7 +230,7 @@ function show_career(){
 							'个人行动':'尽调该公司管线产品的竞争格局，结合海关数据分析等辅助开拓市场'
 						},
 						{
-							'项目结果':'尽调了磺胺类药物的市场竞争格局，几个抗虫药的竞争格局分析，预估入局兽药市场的潜力；同时延续公司已有的“快速立项”思路策略，结合该被投公司其中一个绿色化学技术特点，python脚本分析绿皮书，找到可立项产品以完善BP'
+							'项目结果':'尽调了磺胺类药物的市场竞争格局，几个抗虫药的竞争格局分析，预估入局兽药市场的潜力；同时延续公司已有的"快速立项"思路策略，结合该被投公司其中一个绿色化学技术特点，python脚本分析绿皮书，找到可立项产品以完善BP'
 						}
 					]
 				},
@@ -255,7 +261,7 @@ function show_career(){
 			date:'(09/2020 - 10/2022)',
 			projects:[
 				{
-					project_name:'脑倍佳+ 微信小程序:0到1的研发与开发&nbsp;|&nbsp;自学成“全栈”',
+					project_name:'脑倍佳+ 微信小程序:0到1的研发与开发&nbsp;|&nbsp;自学成"全栈"',
 					project_discription:[
 						{
 							'项目背景':'公司已有toB业务，但缺少从toB到toC的途径'
@@ -295,7 +301,7 @@ function show_career(){
 							'项目背景':'罗氏制药(上海)为其员工及家属举办记忆健康体检，但没有额外的线下记忆评估师'
 						},
 						{
-							'项目目标':'实现独立的线上一整套“评估-管理-干预”方案'
+							'项目目标':'实现独立的线上一整套"评估-管理-干预"方案'
 						},
 						{
 							'个人行动':'以技术的身份参加了项目会议，主动与第三方运营公司对接。根据需求梳理用户路径与页面流程，完成前端代码，对关键业务流程用公众平台工具we分析埋点，对平台埋点数据和公司数据库分析(python + sql)用户行为、用户画像和转化漏斗，每月产出数据分析报告，辅助罗氏和第三方运营公司制定运营策略。为了保证用户数据安全，与CTO配合完成了数据加密解密的工作'
@@ -365,8 +371,13 @@ function show_career(){
 	for(let career in career_list){
 		html_career.push('<div class="info_container">')
 		var html_text = ''
-		html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + career_list[career].date_tag[0] + '</div><div class="date_box_btm">' + career_list[career].date_tag[1] + '</div></div></div>'
-			html_text += '<div class="main">'
+		
+		// Only show date_tag div if not on mobile
+		if (!isMobile) {
+			html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + career_list[career].date_tag[0] + '</div><div class="date_box_btm">' + career_list[career].date_tag[1] + '</div></div></div>'
+		}
+		
+		html_text += '<div class="main">'
 				
 				html_text += '<div class="place_name">'
 				html_text += career_list[career].company
@@ -487,6 +498,7 @@ function show_skills(){
 }
 
 function show_freelancing(){
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	var career_list = [
 		{
 			company:'天津大学无障碍通用设计研究中心｜AUDRC',
@@ -519,8 +531,13 @@ function show_freelancing(){
 	for(let career in career_list){
 		html_career.push('<div class="info_container">')
 		var html_text = ''
-		html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + career_list[career].date_tag[0] + '</div><div class="date_box_btm">' + career_list[career].date_tag[1] + '</div></div></div>'
-			html_text += '<div class="main">'
+		
+		// Only show date_tag div if not on mobile
+		if (!isMobile) {
+			html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + career_list[career].date_tag[0] + '</div><div class="date_box_btm">' + career_list[career].date_tag[1] + '</div></div></div>'
+		}
+		
+		html_text += '<div class="main">'
 				
 				html_text += '<div class="place_name">'
 				html_text += career_list[career].company
@@ -567,6 +584,7 @@ function show_freelancing(){
 }
 
 function show_intern(){
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	var intern_list = [
 		/* {
 			company:'一郎软件',
@@ -619,8 +637,13 @@ function show_intern(){
 		html_intern.push('<div class="info_container">')
 		// console.log(edu_list[edu])
 		var html_text = ''
-		html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + intern_list[intern].date_tag[0] + '</div><div class="date_box_btm">' + intern_list[intern].date_tag[1] + '</div></div></div>'
-			html_text += '<div class="main">'
+		
+		// Only show date_tag div if not on mobile
+		if (!isMobile) {
+			html_text += '<div class="date_column"><div class="date_box"><div class="date_box_top">' + intern_list[intern].date_tag[0] + '</div><div class="date_box_btm">' + intern_list[intern].date_tag[1] + '</div></div></div>'
+		}
+		
+		html_text += '<div class="main">'
 				
 				html_text += '<div class="place_name">'
 				html_text += intern_list[intern].company

@@ -25,7 +25,7 @@ function IsPC () {
     for (var v = 0; v < Agents.length; v++) {
         if (userAgentInfo.indexOf(Agents[v]) > 0) {
             flag = false;
-			alert('请使用电脑浏览')
+			// alert('请使用电脑浏览')
             break;
         }
     }
