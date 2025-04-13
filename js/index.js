@@ -146,219 +146,256 @@ function show_career(){
 		{
 			company:'宁波优贝徳进出口有限公司｜Unibest',
 			date_tag:['Nov.', '2022'],
-			role:'数字化产品与运营（BD部门 -> 数字化部门）',
-			date:'(11/2022 - 至今)',
-			projects:[
+			sections:[
 				{
-					project_name:'制剂项目&nbsp;|&nbsp;新客户开发+项目管理',
-					project_discription:[
+					role:'市场与项目经理',
+					date:'(06/2024 - 至今)',
+					projects:[
 						{
-							'项目背景':'推进司美格鲁肽在全球非专利地区的仿制药片剂生产'
-						},
-						{
-							'项目目标':'协助供应商找到有生产和销售能力的制剂生产商'
-						},
-						{
-							'个人行动':'品牌和项目包装、领英与独立站推广；项目管理，重点放在了相关方期望的管理中；目前正在推进一个涉及5个相关方的合作中'
-						},
-						{
-							'项目结果':'正在进行中'
+							project_name:'制剂技术转移和分销&nbsp;|&nbsp;项目管理',
+							project_discription:[
+								{
+									'项目背景':'新客户leads，对接需求'
+								},
+								{
+									'项目目标':'为客户提供项目解决方案'
+								},
+								{
+									'个人行动':'通过TC和线下见面，了解需求；识别高层次风险（专利、法规政策、政治）；项目范围管理、匹配供需；相关方管理'
+								},
+								{
+									'项目结果':'推进了28个制剂项目：1个生物类似物CDMO，1个医疗器械注册，1个license in，1个创新药NewCo，20+制剂分销和技术转移'
+								}
+							]
+						},{
+							project_name:'制剂业务&nbsp;|&nbsp;新客户开发(Acquisition)',
+							project_discription:[
+								{
+									'项目背景':'支持公司新业务发展——制剂授权、NewCo和分销'
+								},
+								{
+									'项目目标':'在全球范围内找到买方'
+								},
+								{
+									'个人行动':'根据制剂产品特点，进行品牌和项目包装、领英与独立站推广、冷触达'
+								},
+								{
+									'项目结果':'开发了15个新客户leads，覆盖欧洲、中东和东南亚'
+								}
+							]
 						}
 					]
 				},
 				{
-					project_name:'公司线上系统搭建&nbsp;|&nbsp;AI+全栈',
-					project_discription:[
+					role:'数字化产品与运营（管培）',
+					date:'(11/2022 - 06/2024)',
+					projects:[
 						{
-							'项目背景':'在降本增效的大背景下，低成本搭建公司内部平台'
+							project_name:'公司线上系统搭建&nbsp;|&nbsp;AI+全栈',
+							project_discription:[
+								{
+									'项目背景':'在降本增效的大背景下，低成本搭建公司内部平台'
+								},
+								{
+									'项目目标':'一个涵盖公司文件审计、药物检索、新员工培训系统等功能的运作平台'
+								},
+								{
+									'个人行动':'收集并梳理需求后，运用AI，做了全栈开发'
+								},
+								{
+									'项目结果':'在同时有其它工作的背景下，先后各花费了：<br> 1. <b>约半个月</b>上线了单证部门文件审批系统（配合审计需求，详细记录文件审批的错误和操作记录）;<br> 2. <b>约半个月</b>上线展会小程序，旨在辅助业务员在线下参加展会时，能够及时查看公司ERP系统的供应商信息、快速了解某药物的FDA审批及药理信息，并为公司一站式服务工具箱，提供了打标签的信息录入渠道；<br> 3. <b>约一周</b>将展会小程序中的橙皮书查询及工具箱功能移至线上系统，以便于业务部门在日常工作时于企业微信端操作；<br> 4. <b>约两周</b>，上线了一个新员工培训系统，其中部分素材，迎合公司对外开放的ESG原则，作为"优贝徳商学院"公开给社会群众(现已下线)。系统本身包括PC和移动端能够访问的学习平台，根据各部门的要求展示必学内容；一个后台管理页面，包括HR和领导称可access的可视化看板，HR操作的课程素材管理和新员工学习情况进度跟进等'
+								}
+							]
 						},
 						{
-							'项目目标':'一个涵盖公司文件审计、药物检索、新员工培训系统等功能的运作平台'
+							project_name:'快速立项&nbsp;|&nbsp;赋能业务',
+							project_discription:[
+								{
+									'项目背景':'为弥补业务部门普遍非化工背景的短板，快速提炼对业务进展有帮助的医药化工信息'
+								},
+								{
+									'项目目标':'快速了解业务项目背景'
+								},
+								{
+									'个人行动':'尽调开源接口，用python制作各种药物分析小工具，最终汇聚在一个软件工具中'
+								},
+								{
+									'项目结果':'所写脚本共涵盖以下功能：<br>1. 某药企海关数据分析，寻找高附加值产品；<br>2. 某药物在临床应用中的竞争格局；<br>3. 某药企的管线分析'
+								}
+							]
 						},
 						{
-							'个人行动':'收集并梳理需求后，运用AI，做了全栈开发'
+							project_name:'上新的ERP系统&nbsp;|&nbsp;项目管理',
+							project_discription:[
+								{
+									'项目背景':'公司原ERP系统存在本地部署、功能不齐全、ERP厂商不配合等诸多问题，需要一个新的ERP'
+								},
+								{
+									'项目目标':'ERP选型与实施'
+								},
+								{
+									'个人行动':'尽调市面上的ERP企业，沟通需求，撰写ERP项目的商业可行性分析报告给领导层汇报'
+								},
+								{
+									'项目结果':'ERP的初选到跟进，从23年7月初到9月底，一共沟通了6、7家厂商，入围方案跟进了3家，共花费了近3个月的时间。从背景、入选沟通的厂家基本情况、各家公司的方案比较与成本、方案ROI测算与推荐，以及最后基于ERP的数字化建设方案这几部分做了选型报告后，领导层告知项目中止'
+								}
+							]
 						},
 						{
-							'项目结果':'在同时有其它工作的背景下，先后各花费了：<br> 1. <b>约半个月</b>上线了单证部门文件审批系统（配合审计需求，详细记录文件审批的错误和操作记录）;<br> 2. <b>约半个月</b>上线展会小程序，旨在辅助业务员在线下参加展会时，能够及时查看公司ERP系统的供应商信息、快速了解某药物的FDA审批及药理信息，并为公司一站式服务工具箱，提供了打标签的信息录入渠道；<br> 3. <b>约一周</b>将展会小程序中的橙皮书查询及工具箱功能移至线上系统，以便于业务部门在日常工作时于企业微信端操作；<br> 4. <b>约两周</b>，上线了一个新员工培训系统，其中部分素材，迎合公司对外开放的ESG原则，作为"优贝徳商学院"公开给社会群众(现已下线)。系统本身包括PC和移动端能够访问的学习平台，根据各部门的要求展示必学内容；一个后台管理页面，包括HR和领导称可access的可视化看板，HR操作的课程素材管理和新员工学习情况进度跟进等'
-						}
-					]
-				},
-				{
-					project_name:'快速立项&nbsp;|&nbsp;赋能业务',
-					project_discription:[
-						{
-							'项目背景':'为弥补业务部门普遍非化工背景的短板，快速提炼对业务进展有帮助的医药化工信息'
+							project_name:'公司内部投资&nbsp;|&nbsp;公司尽调',
+							project_discription:[
+								{
+									'项目背景':'公司绿化化学的投资理念背景下，投资一家AIDD+绿色化学的公司，配合做尽调和BP'
+								},
+								{
+									'项目目标':'达成天使轮投资'
+								},
+								{
+									'个人行动':'尽调该公司管线产品的竞争格局，结合海关数据分析等辅助开拓市场'
+								},
+								{
+									'项目结果':'尽调了磺胺类药物的市场竞争格局，几个抗虫药的竞争格局分析，预估入局兽药市场的潜力；同时延续公司已有的"快速立项"思路策略，结合该被投公司其中一个绿色化学技术特点，python脚本分析绿皮书，找到可立项产品以完善BP'
+								}
+							]
 						},
 						{
-							'项目目标':'快速了解业务项目背景'
-						},
-						{
-							'个人行动':'尽调开源接口，用python制作各种药物分析小工具，最终汇聚在一个软件工具中'
-						},
-						{
-							'项目结果':'所写脚本共涵盖以下功能：<br>1. 某药企海关数据分析，寻找高附加值产品；<br>2. 某药物在临床应用中的竞争格局；<br>3. 某药企的管线分析；<br>4. 【目前还处于研发阶段】药物市场分析'
-						}
-					]
-				},
-				{
-					project_name:'上新的ERP系统&nbsp;|&nbsp;项目管理',
-					project_discription:[
-						{
-							'项目背景':'公司原ERP系统存在本地部署、功能不齐全、ERP厂商不配合等诸多问题，需要一个新的ERP'
-						},
-						{
-							'项目目标':'ERP选型与实施'
-						},
-						{
-							'个人行动':'尽调市面上的ERP企业，沟通需求，撰写ERP项目的商业可行性分析报告给领导层汇报'
-						},
-						{
-							'项目结果':'ERP的初选到跟进，从23年7月初到9月底，一共沟通了6、7家厂商，入围方案跟进了3家，共花费了近3个月的时间。从背景、入选沟通的厂家基本情况、各家公司的方案比较与成本、方案ROI测算与推荐，以及最后基于ERP的数字化建设方案这几部分做了选型报告后，领导层告知项目中止'
-						}
-					]
-				},
-				{
-					project_name:'公司内部投资&nbsp;|&nbsp;公司尽调',
-					project_discription:[
-						{
-							'项目背景':'公司绿化化学的投资理念背景下，投资一家AIDD+绿色化学的公司，配合做尽调和BP'
-						},
-						{
-							'项目目标':'达成天使轮投资'
-						},
-						{
-							'个人行动':'尽调该公司管线产品的竞争格局，结合海关数据分析等辅助开拓市场'
-						},
-						{
-							'项目结果':'尽调了磺胺类药物的市场竞争格局，几个抗虫药的竞争格局分析，预估入局兽药市场的潜力；同时延续公司已有的"快速立项"思路策略，结合该被投公司其中一个绿色化学技术特点，python脚本分析绿皮书，找到可立项产品以完善BP'
-						}
-					]
-				},
-				{
-					project_name:'公司对外形象建设&nbsp;|&nbsp;20周年新形象',
-					project_discription:[
-						{
-							'项目背景':'公司成立20周年'
-						},
-						{
-							'项目目标':'制作相关的宣传素材'
-						},
-						{
-							'个人行动':'公司新logo设计协调；集团网站制作；公司一站式解决方案-新版ppt制作等'
-						},
-						{
-							'项目结果':'1. 新logo设计跟进，成功交付；<br> 2. 集团网站第三方制作跟进，并成功上线<a href="unibestcn.com">中文官网</a>和<a href="en.unibestcn.com">英文官网</a>；<br> 3. 根据不同目标客户群体，制作了面向创新药企业客户的、面向仿制药企业客户的、面向CXO企业客户的中英文ppt共6份+2份master版本'
+							project_name:'公司对外形象建设&nbsp;|&nbsp;20周年新形象',
+							project_discription:[
+								{
+									'项目背景':'公司成立20周年'
+								},
+								{
+									'项目目标':'制作相关的宣传素材'
+								},
+								{
+									'个人行动':'公司新logo设计协调；集团网站制作；公司一站式解决方案-新版ppt制作等'
+								},
+								{
+									'项目结果':'1. 新logo设计跟进，成功交付；<br> 2. 集团网站第三方制作跟进，并成功上线<a href="unibestcn.com">中文官网</a>和<a href="en.unibestcn.com">英文官网</a>；<br> 3. 根据不同目标客户群体，制作了面向创新药企业客户的、面向仿制药企业客户的、面向CXO企业客户的中英文ppt共6份+2份master版本'
+								}
+							]
 						}
 					]
 				}
 			],
-			duties:['社交媒体运营（公众号+领英）','公司数字化转型','投资尽调','产品推广（<a href="www.unibestpharm.com">SEO</a>和新推广平台Reaxys）','公司内AI应用推行','产品立项','爬虫','子公司国外客户会议翻译']
+			duties:['社交媒体运营（公众号+领英）','公司数字化转型','投资尽调','产品推广（<a href="www.unibestpharm.com">SEO</a>和新推广平台Reaxys）','公司内AI应用推行','产品立项','子公司国外客户会议翻译','老ERP维护']
 		},
 		{
 			company:'上海织生科技有限公司｜NeuroWeave',
 			date_tag:['Sept.', '2020'],
-			role:'(low-key全栈)产品经理->(偏数据)研发产品经理->研发总监｜董事',
-			date:'(09/2020 - 10/2022)',
-			projects:[
+			sections:[
+				
 				{
-					project_name:'脑倍佳+ 微信小程序:0到1的研发与开发&nbsp;|&nbsp;自学成"全栈"',
-					project_discription:[
+					role:'研发总监（董事会成员）',
+					date:'(10/2021 - 10/2022)',
+					projects:[
 						{
-							'项目背景':'公司已有toB业务，但缺少从toB到toC的途径'
+							project_name:'术后谵妄预警系统:项目管理&nbsp;|&nbsp;立足科研',
+							project_discription:[
+								{
+									'项目背景':'术后谵妄在老年人中有这很高的发病率，但是是被忽视的一个急性临床现象'
+								},
+								{
+									'项目目标':'及时发现潜在谵妄病人，改善手术预后'
+								},
+								{
+									'个人行动':'通过文献调研、讲座学习和临床试验检索，筛选出可以使用的谵妄评估方式，结合公司已有技术，整理提出可行的、新颖的评估方法。定期与项目方沟通，确定解决方案的流程。根据世界卫生组织对eHealth的monitor与evaluation的方法，确定数据分析指标体系。'
+								},
+								{
+									'项目结果':'在骨科和麻醉科已经投入使用'
+								}
+							]
 						},
 						{
-							'项目目标':'搭建一个面向认知障碍老人的线上居家干预平台，实现公司toB再toC的商业模式'
+							project_name:'AI眼动医疗器械:轨迹分析&nbsp;|&nbsp;底层技术',
+							project_discription:[
+								{
+									'项目背景':'需要对AI眼动追踪新技术得到的原始(x,y,t)系列数据加工，得到临床有意义的指标'
+								},
+								{
+									'项目目标':'获得「数字生物标记物」'
+								},
+								{
+									'个人行动':'通过文献调研，找到合适的眼跳分类器雏形，结合公司的眼动任务特征，编写分类器.py，配合后端分析原始的注视点(x,y,t)数据，对每一个注视点打标签。后续对特定神经系统疾病调研(MCI、ADHD、ASD等)，结合评估范式，对任务过程中的眼动参数进行计算分析，得到「数字生物标记物」，并用于后续的临床验证'
+								},
+								{
+									'项目结果':'制作的分类器.py能够实现凝视、眼跳、平缓追踪等主要眼动行为的区分，同时，制作的眨眼.py能够鉴别任务过程中眨眼的发生。在后续的疾病应用中，一共计算得到了29个「数字生物标记物」，目前用于临床前(MCI/AD)和临床(ADHD)的研究中。'
+								}
+							]
 						},
 						{
-							'个人行动':'根据207+国内外流行病学研究文献，汇总了4大类非药物干预方案，设计了个性化自适应推荐算法。通过竞品分析，设计了MVP原型图。用了一个月自学了前端开发，用Hbuilder X完成开发，并用unicloud云开发度过了公司没有后端工程师的局面。'
-						},
-						{
-							'项目结果':'小程序成功上线，可以完成toB到toC的业务；推荐算法成功申请专利CN114038534A'
+							project_name:'AI眼动医疗器械申报:临床试验与申报&nbsp;|&nbsp;合作对接',
+							project_discription:[
+								{
+									'项目背景':'医疗器械的临床和申报，是公司pre-A的重要目标'
+								},
+								{
+									'项目目标':'设计并推动医疗器械临床前与临床试验'
+								},
+								{
+									'个人行动':'结合药物临床试验的相关知识，调研国内外类似产品的临床试验方案，从统计学、诊断有效性等角度出发，设计了眼动用于MCI诊断的临床前研究方案与3期临床方案。协同5+医院，推进试验的展开。同时与CRO公司对接，确定医疗器械的申报流程、临床时间安排等。'
+								},
+								{
+									'项目结果':'一共成功对接了3家可以进行临床前研究的医院。设计的临床方案，也得到了医生的认可。在医疗器械申报方面，协同公司CXO与对接的CRO公司，确定了分类鉴定的方向、产品定型的目标。'
+								}
+							]
 						}
 					]
 				},
 				{
-					project_name:'脑倍佳+ 微信小程序:V1.0到V2.0迭代&nbsp;|&nbsp;产品思维，回归需求',
-					project_discription:[
+					role:'全栈产品经理',
+					date:'(09/2020 - 10/2021)',
+					projects:[
 						{
-							'项目背景':'在干预小程序上线后，用户留存很差'
+							project_name:'脑倍佳+ 微信小程序:0到1的研发与开发&nbsp;|&nbsp;自学成"全栈"',
+							project_discription:[
+								{
+									'项目背景':'公司已有toB业务，但缺少从toB到toC的途径'
+								},
+								{
+									'项目目标':'搭建一个面向认知障碍老人的线上居家干预平台，实现公司toB再toC的商业模式'
+								},
+								{
+									'个人行动':'根据207+国内外流行病学研究文献，汇总了4大类非药物干预方案，设计了个性化自适应推荐算法。通过竞品分析，设计了MVP原型图。用了一个月自学了前端开发，用Hbuilder X完成开发，并用unicloud云开发度过了公司没有后端工程师的局面。'
+								},
+								{
+									'项目结果':'小程序成功上线，可以完成toB到toC的业务；推荐算法成功申请专利CN114038534A'
+								}
+							]
 						},
 						{
-							'项目目标':'增加用户留存'
+							project_name:'脑倍佳+ 微信小程序:V1.0到V2.0迭代&nbsp;|&nbsp;产品思维，回归需求',
+							project_discription:[
+								{
+									'项目背景':'在干预小程序上线后，用户留存很差'
+								},
+								{
+									'项目目标':'增加用户留存'
+								},
+								{
+									'个人行动':'通过复盘、拆解功能模块，深入分析国内外在认知训练领域的产品，整理成分析文档并汇报展示，向决策层给出了迭代方向的建议。通过问卷和一对一老年人深度交流的方式，了解用户的原始需求，最后用综合运5W2H和KANO等需求分析方法，制定相应的版本规划(包括社交圈子、自营商城、游戏化激励体系、制定线上服务支付流程等)、产出PRD和原型图，完成前端开发。'
+								},
+								{
+									'项目结果':'与UI设计师配合，陆续上线了一些版本更新'
+								}
+							]
 						},
 						{
-							'个人行动':'通过复盘、拆解功能模块，深入分析国内外在认知训练领域的产品，整理成分析文档并汇报展示，向决策层给出了迭代方向的建议。通过问卷和一对一老年人深度交流的方式，了解用户的原始需求，最后用综合运5W2H和KANO等需求分析方法，制定相应的版本规划(包括社交圈子、自营商城、游戏化激励体系、制定线上服务支付流程等)、产出PRD和原型图，完成前端开发。'
-						},
-						{
-							'项目结果':'与UI设计师配合，陆续上线了一些版本更新'
-						}
-					]
-				},
-				{
-					project_name:'脑倍佳记忆家庭管理 微信小程序:合作对接与定制化&nbsp;|&nbsp;数据驱动',
-					project_discription:[
-						{
-							'项目背景':'罗氏制药(上海)为其员工及家属举办记忆健康体检，但没有额外的线下记忆评估师'
-						},
-						{
-							'项目目标':'实现独立的线上一整套"评估-管理-干预"方案'
-						},
-						{
-							'个人行动':'以技术的身份参加了项目会议，主动与第三方运营公司对接。根据需求梳理用户路径与页面流程，完成前端代码，对关键业务流程用公众平台工具we分析埋点，对平台埋点数据和公司数据库分析(python + sql)用户行为、用户画像和转化漏斗，每月产出数据分析报告，辅助罗氏和第三方运营公司制定运营策略。为了保证用户数据安全，与CTO配合完成了数据加密解密的工作'
-						},
-						{
-							'项目结果':'体检活动上线两个月内，完成了255位用户的记忆健康体检；通过公众号文章PGC与注册人数的关系，帮助第三方运营公司及时调整PGC，增加注册数'
-						}
-					]
-				},
-				{
-					project_name:'术后谵妄预警系统:项目管理&nbsp;|&nbsp;立足科研',
-					project_discription:[
-						{
-							'项目背景':'术后谵妄在老年人中有这很高的发病率，但是是被忽视的一个急性临床现象'
-						},
-						{
-							'项目目标':'及时发现潜在谵妄病人，改善手术预后'
-						},
-						{
-							'个人行动':'通过文献调研、讲座学习和临床试验检索，筛选出可以使用的谵妄评估方式，结合公司已有技术，整理提出可行的、新颖的评估方法。定期与项目方沟通，确定解决方案的流程。根据世界卫生组织对eHealth的monitor与evaluation的方法，确定数据分析指标体系。'
-						},
-						{
-							'项目结果':'在骨科和麻醉科已经投入使用'
-						}
-					]
-				},
-				{
-					project_name:'AI眼动医疗器械:轨迹分析&nbsp;|&nbsp;底层技术',
-					project_discription:[
-						{
-							'项目背景':'需要对AI眼动追踪新技术得到的原始(x,y,t)系列数据加工，得到临床有意义的指标'
-						},
-						{
-							'项目目标':'获得「数字生物标记物」'
-						},
-						{
-							'个人行动':'通过文献调研，找到合适的眼跳分类器雏形，结合公司的眼动任务特征，编写分类器.py，配合后端分析原始的注视点(x,y,t)数据，对每一个注视点打标签。后续对特定神经系统疾病调研(MCI、ADHD、ASD等)，结合评估范式，对任务过程中的眼动参数进行计算分析，得到「数字生物标记物」，并用于后续的临床验证'
-						},
-						{
-							'项目结果':'制作的分类器.py能够实现凝视、眼跳、平缓追踪等主要眼动行为的区分，同时，制作的眨眼.py能够鉴别任务过程中眨眼的发生。在后续的疾病应用中，一共计算得到了29个「数字生物标记物」，目前用于临床前(MCI/AD)和临床(ADHD)的研究中。'
-						}
-					]
-				},
-				{
-					project_name:'AI眼动医疗器械申报:临床试验与申报&nbsp;|&nbsp;合作对接',
-					project_discription:[
-						{
-							'项目背景':'医疗器械的临床和申报，是公司pre-A的重要目标'
-						},
-						{
-							'项目目标':'设计并推动医疗器械临床前与临床试验'
-						},
-						{
-							'个人行动':'结合药物临床试验的相关知识，调研国内外类似产品的临床试验方案，从统计学、诊断有效性等角度出发，设计了眼动用于MCI诊断的临床前研究方案与3期临床方案。协同5+医院，推进试验的展开。同时与CRO公司对接，确定医疗器械的申报流程、临床时间安排等。'
-						},
-						{
-							'项目结果':'一共成功对接了3家可以进行临床前研究的医院。设计的临床方案，也得到了医生的认可。在医疗器械申报方面，协同公司CXO与对接的CRO公司，确定了分类鉴定的方向、产品定型的目标。'
+							project_name:'脑倍佳记忆家庭管理 微信小程序:合作对接与定制化&nbsp;|&nbsp;数据驱动',
+							project_discription:[
+								{
+									'项目背景':'罗氏制药(上海)为其员工及家属举办记忆健康体检，但没有额外的线下记忆评估师'
+								},
+								{
+									'项目目标':'实现独立的线上一整套"评估-管理-干预"方案'
+								},
+								{
+									'个人行动':'以技术的身份参加了项目会议，主动与第三方运营公司对接。根据需求梳理用户路径与页面流程，完成前端代码，对关键业务流程用公众平台工具we分析埋点，对平台埋点数据和公司数据库分析(python + sql)用户行为、用户画像和转化漏斗，每月产出数据分析报告，辅助罗氏和第三方运营公司制定运营策略。为了保证用户数据安全，与CTO配合完成了数据加密解密的工作'
+								},
+								{
+									'项目结果':'体检活动上线两个月内，完成了255位用户的记忆健康体检；通过公众号文章PGC与注册人数的关系，帮助第三方运营公司及时调整PGC，增加注册数'
+								}
+							]
 						}
 					]
 				}
@@ -384,36 +421,37 @@ function show_career(){
 				html_text += '</div>'
 				
 				
-				html_text += '<div class="main_tag">'
-				html_text += career_list[career].role
-				html_text += '</div>'
-				
-				html_text += '<div class="main_year_tag">'
-				html_text += career_list[career].date
-				html_text += '</div>'
-				
-				html_text += '<div class="main_subsection_title">项目经历</div>'
-				html_text += '<div class="main_project_container">'
-				for(let project_indiv in career_list[career].projects){
-					html_text += '<div class="main_project_name">'
-					html_text += career_list[career].projects[project_indiv].project_name
+				for(let section in career_list[career].sections) {
+					html_text += '<div class="main_tag">'
+					html_text += career_list[career].sections[section].role
 					html_text += '</div>'
-					html_text += '<div class="main_project_discription_container">'
-					for(let project_dis in career_list[career].projects[project_indiv].project_discription){
-						html_text += '<div class="main_project_discription_line">'
-							html_text += '<div class="main_project_discription_line_tag">'
-							html_text += Object.keys(career_list[career].projects[project_indiv].project_discription[project_dis])[0]
+					
+					html_text += '<div class="main_year_tag">'
+					html_text += career_list[career].sections[section].date
+					html_text += '</div>'
+					
+					html_text += '<div class="main_subsection_title">项目经历</div>'
+					html_text += '<div class="main_project_container">'
+					for(let project_indiv in career_list[career].sections[section].projects){
+						html_text += '<div class="main_project_name">'
+						html_text += career_list[career].sections[section].projects[project_indiv].project_name
+						html_text += '</div>'
+						html_text += '<div class="main_project_discription_container">'
+						for(let project_dis in career_list[career].sections[section].projects[project_indiv].project_discription){
+							html_text += '<div class="main_project_discription_line">'
+								html_text += '<div class="main_project_discription_line_tag">'
+								html_text += Object.keys(career_list[career].sections[section].projects[project_indiv].project_discription[project_dis])[0]
+								html_text += '</div>'
+								
+								html_text += '<div class="main_project_discription_line_text">'
+								html_text += career_list[career].sections[section].projects[project_indiv].project_discription[project_dis][Object.keys(career_list[career].sections[section].projects[project_indiv].project_discription[project_dis])[0]]
+								html_text += '</div>'
 							html_text += '</div>'
-							
-							html_text += '<div class="main_project_discription_line_text">'
-							html_text += career_list[career].projects[project_indiv].project_discription[project_dis][Object.keys(career_list[career].projects[project_indiv].project_discription[project_dis])[0]]
-							html_text += '</div>'
+						}
 						html_text += '</div>'
 					}
 					html_text += '</div>'
-					
 				}
-				html_text += '</div>'
 				
 				html_text += '<div class="main_subsection_title">其它工作内容与职责</div>'
 				html_text += '<div class="main_year_course_container">'
