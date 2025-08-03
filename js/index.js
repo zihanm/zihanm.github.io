@@ -149,7 +149,7 @@ function show_career(){
 			sections:[
 				{
 					role:'市场与项目经理',
-					date:'(06/2024 - 至今)',
+					date:'(06/2024 - 09/2025)',
 					projects:[
 						{
 							project_name:'制剂技术转移和分销&nbsp;|&nbsp;项目管理',
@@ -531,7 +531,7 @@ function show_skills(){
 		},
 		{
 			'其他OTHERS':[
-				'PMP','Prism','LaTeX','Audition','Photoshop'
+				'PMP@PMI','谷歌项目管理','Prism','LaTeX','Audition','Photoshop'
 			]
 		}
 	]
