@@ -188,7 +188,24 @@ function show_career(){
 					date:'(11/2022 - 06/2024)',
 					projects:[
 						{
-							project_name:'公司线上系统搭建&nbsp;|&nbsp;AI+全栈',
+						  project_name: 'Generic Drug Project Initiation & Digital Marketing | Data-Driven',
+						  project_discription: [
+						    {
+						      'Background': 'The company needed to break away from traditional trading models and, through a data-driven “initiation–promotion–customer acquisition” closed loop, quickly identify high-value-added products in the highly competitive generic API/intermediate space and convert them into orders.'
+						    },
+						    {
+						      'Objective': 'Integrate open-source regulatory data, customs intelligence and epidemiological indicators to build a quantitative project-initiation model; simultaneously run an independent-site SEO + B2B matrix to fully digitalize the entire chain of “select right product – content-driven leads – convert leads”.'
+						    },
+						    {
+						      'Actions': '1. Automated scraping of openFDA, PubChem and other databases/APIs with Python, combined with customs data and epidemiology analysis to build a new-drug tracking & product-selection model;<br>2. Mapped ROS via Reaxys & PharmaIntelligence to filter out high-barrier, high-value intermediates;<br>3. Performed SEO on the independent site and authored disease-education + synthesis + pharma-market articles;<br>4. Deployed GA + Hotjar to track visitor behavior.'
+						    },
+						    {
+						      'Results': '1. Initiated 16 API & intermediate pipelines in total;<br>2. For an HIV/AIDS drug example, narrowed down 10+ key intermediates from nearly 100 compounds and pushed CAS No. keywords to Google’s first page within one quarter;<br>3. Identified Argentine pharma company A through visitor behavior, which was successfully converted after sales follow-up;<br>4. Assisted the business team in presenting the project to a strategic supplier’s legal entity, indirectly facilitating the company’s equity investment.'
+						    }
+						  ]
+						},
+						{
+							project_name:'Internal System Development&nbsp;|&nbsp;AI+ Full Stack',
 							project_discription:[
 								{
 									'Background':'Against the backdrop of cost reduction and efficiency improvement, the company urgently needed a low-cost, multi-functional internal operations platform to meet diverse business needs such as document auditing, drug retrieval, and new-employee training.'
